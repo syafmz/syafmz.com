@@ -503,8 +503,13 @@ footer::before
 @media only screen and (min-width: 35em){}
 
 /*edit*/
-@media screen and (max-width: 1024px) 
+@media screen and (max-width: 600px) 
 {
+  body
+  {
+    font-size: 0.675em;
+  }
+  
   .col 
   { 
 		margin: 0%;
@@ -533,22 +538,6 @@ footer::before
     align-items: center;
     justify-content: center;
   } 
-}
-
-/* @media screen and (max-width: 900px)  */
-/* { */
-	/* .grid li  */
-  /* { */
-		/* width: 50%; */
-	/* } */
-/* } */
-
-@media screen and (max-width: 600px) 
-{
-  body
-  {
-    font-size: 0.675em;
-  }
   
   .grid li 
   {
