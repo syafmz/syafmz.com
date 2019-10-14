@@ -503,7 +503,7 @@ footer::before
 @media only screen and (min-width: 35em){}
 
 /*edit*/
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 768px) 
 {
   body
   {
