@@ -1,0 +1,12 @@
+{
+  "short_name": "Syafmz",
+  "name": "Syafiqah Zailani",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#34373d",
+  "theme_color": "#34373d"
+}

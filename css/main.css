@@ -1,0 +1,573 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+  Color swatch: 
+    Bg color:             #34373d (Black)
+    Text color:           #e0eaf2 (Pale blue)
+    Highlight bg color:   #329bfa (Bright blue)
+    Highlight text color: #34373d (Black)
+    Hyperlink unactive:   #dabd9f (Beige)
+    Hyperlink active:     #e0eaf2 (Dark orange)
+   ========================================================================== */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+   
+html, body{margin: 0;padding: 0;color: #e0eaf2;font-size: 1em;line-height: 1.4;height: 100%;}
+
+::-moz-selection{background: #329bfa;color: #34373d;text-shadow: none;}
+::selection{background: #329bfa;color: #34373d;text-shadow: none;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
+
+audio,canvas,iframe,img,svg,video{vertical-align: middle;}
+
+fieldset, img{border: 0;margin: 0;padding: 0;}
+textarea{resize: vertical;}
+
+img{max-width: 100%;width: auto\9;height: auto;}
+
+ol,ul{list-style:none;}
+
+a{cursor: pointer;outline: 0;}
+a img{border: 0;text-decoration: none;}
+a:link, a:visited{color: #dabd9f;text-decoration: none;}       /* unvisited link, visited link */
+a:hover, a:active{color: #e0eaf2;text-decoration: underline;}  /* mouse over link, selected link */
+a[href] *{cursor: pointer;}
+
+blockquote 
+{
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #e0eaf2;
+  padding: 1.5em 0 0.5em;
+  margin: 1.5em 0;
+  position: relative;
+}
+blockquote:before 
+{
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #34373d;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: #666;
+  text-align: center;
+}
+blockquote:after 
+{
+  content: "\2013 \2003" attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  color: #666;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade{margin: 0.2em 0;background: #ccc;color: #000;padding: 0.2em 0;}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+body 
+{ 
+  color: #e0eaf2; 
+  background: #34373d url('../img/bg.png');
+  font-size: 0.875em; 
+  font-family: 'Quicksand', sans-serif;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+}
+
+body.open 
+{ 
+  height: 100%;
+  overflow: hidden; 
+}
+
+.container 
+{
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+.content
+{
+  display: none;
+  flex: 1 0 auto;
+}
+
+/* Rows and Columns
+-----------------------------------------------*/
+
+.section 
+{
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.group:before,
+.group:after 
+{
+  content: "";
+  display: table;
+}
+
+.group:after 
+{
+  clear: both;
+}
+
+.group 
+{
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.col 
+{
+	display: block;
+	float: left;
+	margin: 0% 0% 0% 1.6%;
+}
+
+.col:first-child 
+{ 
+  margin-left: 0; 
+}
+
+.span_1_of_3 
+{
+	width: 32.26%; 
+}
+
+/* Arrowbox
+-----------------------------------------------*/
+
+.arrow_box 
+{
+	position: relative;
+	background: #34373d;
+	border: 2px solid #dabd9f;
+  width: 200px;
+}
+
+.arrow_box:after, .arrow_box:before 
+{
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after 
+{
+	border-color: rgba(52, 55, 61, 0);
+	border-top-color: #34373d;
+	border-width: 20px;
+	margin-left: -20px;
+}
+
+.arrow_box:before 
+{
+	border-color: rgba(218, 189, 159, 0);
+	border-top-color: #dabd9f;
+	border-width: 23px;
+	margin-left: -23px;
+}
+
+/* Navigation Menus
+-----------------------------------------------*/
+
+#header
+{
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: #34373d url('../img/bg.png'); 
+}
+
+#header ul 
+{
+  margin: 0;
+  padding: 0;	
+  list-style-type: none; 
+  overflow: hidden;
+}
+
+#menu
+{
+  overflow: visible;
+}
+
+#menu li 
+{
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 16px 14px;
+}
+
+#menu li a 
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: #dabd9f;
+  text-shadow: 0px 2px 8px #000;
+}
+
+#menu li a:hover, 
+#menu li a:active 
+{
+  color: #e0eaf2;
+  text-shadow: none !important;
+}
+
+#menu li a.active
+{
+  border-bottom: 2px solid #dabd9f;
+}
+
+#menu li a.active:hover
+{
+  border-bottom: 2px solid #e0eaf2;
+}
+
+#title
+{
+  margin-top: 0;
+  overflow: visible;
+  padding: 10px 0;
+}
+
+#socials
+{
+  float: right;
+  overflow: visible;
+}
+
+#socials li 
+{
+  display: block;
+  margin: 0;
+  padding: 10px 8px;
+  float: left;
+}
+
+#socials li a img
+{ 
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+#socials li a:hover img, 
+#socials li a:active img
+{
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+/* About
+-----------------------------------------------*/
+
+#about
+{
+  margin-top: 100px;
+}
+
+#about h5
+{
+  font-weight: 400;
+  font-size: 2.5em;
+  margin: 0.5em auto;
+  text-shadow: 0px 4px 8px #000;
+}
+
+#about label
+{
+  color: #dabd9f;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  
+  transform: scale(1.0);
+  transition: transform .25s, visibility .25s ease-in;
+}
+
+#about label:hover,
+#about label:active
+{
+  transform: scale(1.04);
+}
+
+/* Slideshow
+-----------------------------------------------*/
+
+#slideshow
+{
+  overflow: visible;
+  text-align: center;
+  display: table;
+  width: 100%;
+  min-height: 400px;
+}
+
+.mySlides 
+{
+  display: none;
+}
+
+#slideshow h1
+{
+  font-weight: 400;
+  font-size: 2.5em;
+  text-align: left;
+}
+
+#slideshow p
+{
+  font-size: 1.2em;
+  padding: 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#slideshow img
+{
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+}
+
+#slideshow .flexbox 
+{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+#slideshow .flexbox .column:nth-child(1)
+{
+  width: 66.13%;
+  padding-left: 16px;
+}
+
+#slideshow .flexbox .column:nth-child(2)
+{
+  width: 32.26%;
+  padding: 0 16px;
+}
+
+@-webkit-keyframes fadeIn 
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn 
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fadeIn 
+{
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3.0s;
+  animation-duration: 3.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* Portfolio
+-----------------------------------------------*/
+
+#portfolio
+{
+  
+}
+
+.grid 
+{
+	max-width: 64em;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.grid li 
+{
+	display: block;
+	float: left;
+	padding: 5px;
+	width: 32%;
+	opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li 
+{
+	opacity: 1;
+}
+
+.grid li a,
+.grid li img 
+{
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+
+.grid.effect-1 li.animate 
+{
+	-webkit-animation: fadeIn 0.65s ease forwards;
+	animation: fadeIn 0.65s ease forwards;
+}
+
+/* Footer
+-----------------------------------------------*/
+
+footer 
+{
+	border-top: 1px solid #4a4d54;
+	font-size: 0.909em;
+	padding: .5em 0;
+	position: relative;
+	text-align: right;
+  flex-shrink: 0;
+}
+
+footer::before 
+{
+	border-bottom: 1px solid #000;
+	content: ".";
+	height: 1%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden{display: none !important;}
+
+.sr-only{border: 0;clip: rect(0, 0, 0, 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;white-space: nowrap;width: 1px;}
+.sr-only.focusable:active,.sr-only.focusable:focus{clip: auto;height: auto;margin: 0;overflow: visible;position: static;white-space: inherit;width: auto;}
+
+.invisible{visibility: hidden;}
+
+.clearfix:before,.clearfix:after{content: " ";display: table;}
+.clearfix:after{clear: both;}
+
+@media only screen and (min-width: 35em){}
+
+/*edit*/
+@media screen and (max-width: 1024px) 
+{
+  .col 
+  { 
+		margin: 0%;
+	}
+  
+	.span_1_of_3 
+  {
+		width: 100%;
+	}
+  
+  #menu
+  {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #socials
+  {
+    float: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+}
+
+/* @media screen and (max-width: 900px)  */
+/* { */
+	/* .grid li  */
+  /* { */
+		/* width: 50%; */
+	/* } */
+/* } */
+
+@media screen and (max-width: 600px) 
+{
+  body
+  {
+    font-size: 0.675em;
+  }
+  
+  .grid li 
+  {
+		width: 100%;
+	}
+}
+
+@media print,(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 1.25dppx),(min-resolution: 120dpi){}
+@media print 
+{
+  *,*:before,*:after{background: transparent !important;color: #000 !important;-webkit-box-shadow: none !important;box-shadow: none !important;text-shadow: none !important;}
+  a,a:visited{text-decoration: underline;}
+  a[href]:after{content: " (" attr(href) ")";}
+  abbr[title]:after{content: " (" attr(title) ")";}
+  a[href^="#"]:after,a[href^="javascript:"]:after{content: "";}
+  pre{white-space: pre-wrap !important;}
+  pre,blockquote{border: 1px solid #999;page-break-inside: avoid;}
+  thead{display: table-header-group;}
+  tr,img{page-break-inside: avoid;}
+  p,h2,h3{orphans: 3;widows: 3;}
+  h2,h3{page-break-after: avoid;}
+}
