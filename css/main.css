@@ -53,6 +53,7 @@ blockquote
   margin: 1.5em 0;
   position: relative;
 }
+
 blockquote:before 
 {
   content: '\201C';
@@ -67,6 +68,7 @@ blockquote:before
   color: #666;
   text-align: center;
 }
+
 blockquote:after 
 {
   content: "\2013 \2003" attr(cite);

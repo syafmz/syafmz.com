@@ -40,10 +40,10 @@
         <div class="col span_1_of_3">
           <div id="menu">
             <ul>
-              <li><a href="#about" class="btn active" onclick="openContent('about'), currentSlide(1)" title="About">About</a></li>
-              <li><a href="#portfolio" class="btn" onclick="openContent('portfolio')" title="Portfolio">Portfolio</a></li>
-              <li><a href="#resume" class="btn" onclick="openContent('resume')" title="Résumé">Résumé</a></li>
-              <li><a href="#contact" class="btn" onclick="openContent('contact')" title="Contact">Contact</a></li>
+              <li><a href="#about" class="btn" onclick="openContent('about', 0), currentSlide(1)" title="About">About</a></li>
+              <li><a href="#portfolio" class="btn" onclick="openContent('portfolio', 1)" title="Portfolio">Portfolio</a></li>
+              <li><a href="#resume" class="btn" onclick="openContent('resume', 2)" title="Résumé">Résumé</a></li>
+              <li><a href="#contact" class="btn" onclick="openContent('contact', 3)" title="Contact">Contact</a></li>
             </ul>
           </div><!-- /menu -->
         </div><!-- .col -->
@@ -302,7 +302,6 @@
   <script src="js/main.js"></script>
   <script src="js/content.js"></script>
   <script src="js/headerBorder.js"></script>
-  <script src="js/headerActive.js"></script>
   <script src="js/slideshow.js"></script>
   <script src="js/modernizr.custom.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
