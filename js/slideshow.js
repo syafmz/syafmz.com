@@ -1,4 +1,4 @@
-const elapse = 10000;
+const elapse = 12000;
 var slideIndex = 1;
 var myTimer;
 var slideshowContainer;
