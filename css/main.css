@@ -99,12 +99,6 @@ body
   flex-direction: column;
 }
 
-body.open 
-{ 
-  height: 100%;
-  overflow: hidden; 
-}
-
 .container 
 {
   max-width: 1024px;
@@ -209,8 +203,7 @@ body.open
 #header
 {
   padding: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   width: 100%;
   z-index: 999;
   top: 0;
@@ -303,7 +296,7 @@ body.open
 
 #about
 {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 #about h5
@@ -375,7 +368,7 @@ body.open
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  overflow: visible;
   justify-content: center;
   align-items: center;
   flex: 1;
@@ -420,14 +413,14 @@ body.open
 
 #portfolio
 {
-  
+  margin-top: 50px;
 }
 
 .grid 
 {
-	max-width: 64em;
+	max-width: 69em;
 	list-style: none;
-	margin: 0 auto;
+	margin: 30px auto;
 	padding: 0;
 }
 
@@ -435,9 +428,9 @@ body.open
 {
 	display: block;
 	float: left;
-	padding: 5px;
-	width: 32%;
-	opacity: 0;
+	padding: 7px;
+	width: 33%;
+	opacity: 1;  /* edit madafaka*/
 }
 
 .grid li.shown,
@@ -460,6 +453,22 @@ body.open
 {
 	-webkit-animation: fadeIn 0.65s ease forwards;
 	animation: fadeIn 0.65s ease forwards;
+}
+
+/* Resume
+-----------------------------------------------*/
+
+#resume
+{
+  margin-top: 50px;
+}
+
+/* Contact
+-----------------------------------------------*/
+
+#contact
+{
+  margin-top: 50px;
 }
 
 /* Footer
@@ -512,6 +521,14 @@ footer::before
   {
     padding: 10px 8px 0px;
   }
+} 
+
+@media screen and (max-width: 56.25em) 
+{
+  .grid li 
+  {
+		width: 50%;
+	}
 } 
 
 @media screen and (max-width: 52.25em) 
