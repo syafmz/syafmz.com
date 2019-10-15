@@ -565,25 +565,6 @@ footer::before
 .clearfix:before,.clearfix:after{content: " ";display: table;}
 .clearfix:after{clear: both;}
 
-@media screen and (max-width: 1024px) 
-{
-  #menu li
-  {
-    padding: 14px 8px 0px;
-  }
-  
-  #socials li 
-  {
-    padding: 12px 6px 0px;
-  }
-  
-  #socials li a img
-  { 
-    height: auto;
-    width: 80%;
-  }
-} 
-
 @media screen and (max-width: 992px) 
 {
   #menu li
@@ -599,7 +580,7 @@ footer::before
   #socials li a img
   { 
     height: auto;
-    width: 60%;
+    width: 80%;
   }
 } 
 
@@ -618,6 +599,12 @@ footer::before
   #socials li 
   {
     padding: 14px 4px 0px;
+  }
+  
+  #socials li a img
+  { 
+    height: auto;
+    width: 60%;
   }
 } 
 
