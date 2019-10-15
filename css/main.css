@@ -296,7 +296,7 @@ body
 
 #about
 {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 #about h5
@@ -515,7 +515,7 @@ body
 
 #resume
 {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 /* Contact
@@ -523,7 +523,7 @@ body
 
 #contact
 {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 /* Footer
@@ -565,7 +565,7 @@ footer::before
 .clearfix:before,.clearfix:after{content: " ";display: table;}
 .clearfix:after{clear: both;}
 
-@media screen and (max-width: 984px) 
+@media screen and (max-width: 988px) 
 {
   #menu li
   {
@@ -584,7 +584,7 @@ footer::before
   }
 } 
 
-@media screen and (max-width: 836px) 
+@media screen and (max-width: 838px) 
 {
   #menu li
   {
@@ -603,7 +603,7 @@ footer::before
   }
 } 
 
-@media screen and (max-width: 736px) 
+@media screen and (max-width: 738px) 
 {
   #menu
   {
@@ -667,9 +667,17 @@ footer::before
   {
     padding: 10px 8px;
   } 
+  
+  #about, 
+  #portfolio, 
+  #resume, 
+  #contact
+  {
+    padding-top: 120px;
+  }
 }
 
-@media screen and  (max-width: 736px) 
+@media screen and  (max-width: 738px) 
 {
   #grid li 
   {
