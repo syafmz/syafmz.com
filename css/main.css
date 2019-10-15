@@ -640,7 +640,7 @@ footer::before
 {  
   #menu li
   {
-    font-size: 0.8125em;
+    font-size: 0.84375em;
     padding: 16px 8px 0px;
   }
   
@@ -660,7 +660,7 @@ footer::before
 {
   #menu li
   {
-    font-size: 0.75em;
+    font-size: 0.8125em;
     padding: 18px 4px 0px;
   }
   
@@ -680,7 +680,7 @@ footer::before
 {
   body
   {
-    font-size: 0.675em;
+    font-size: 0.75em;
   }
   
   .col 
