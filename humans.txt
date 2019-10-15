@@ -23,7 +23,8 @@
   Language: English
   Font: http://www.google.com/webfonts
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery, Haml, Sass, CoffeeScript, Jekyll
-  Software: Notepad++, Photoshop
-  Version control: Git, Jenkins
-  VPS: Linode (http://www.linode.com/?r=81ed101108be8790f950f852143573de54d82a1a)
+  Components: Modernizr, jQuery
+  Software: Notepad++, Adobe Photoshop CC 2019
+  Version control: Git
+  Domain: Hover (https://hover.com/NLXdb9Iy)
+  Webhost: GitHub (https://github.com/syafmz)
