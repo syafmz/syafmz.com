@@ -204,8 +204,7 @@ body
   text-shadow: 0px 2px 8px #000;
 }
 
-#menu li a:hover, 
-#menu li a:active 
+#menu li a:hover
 {
   color: #e0eaf2;
   text-shadow: none !important;
@@ -313,7 +312,7 @@ body
   display: none;
 }
 
-#slideshow h1
+#slideshow h2
 {
   font-weight: 400;
   font-size: 2.5em;
@@ -324,7 +323,7 @@ body
 {
   font-size: 1.3em;
   padding: 0;
-  text-align: justify;
+  text-align: left;
   text-justify: inter-word;
 }
 
@@ -490,6 +489,108 @@ body
   padding-top: 50px;
 }
 
+.timeline-second-style .timeline-item 
+{
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.timeline-second-style .timeline-item:last-child 
+{
+  padding-bottom: 0;
+}
+
+
+.timeline-second-style .left-part 
+{
+  width: 30%;
+  display: table-cell;
+  padding-right: 25px;
+  min-height: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+
+.timeline-second-style .right-part 
+{
+  width: 70%;
+  display: table-cell;
+  padding-left: 25px;
+  padding-right: 15px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.timeline-second-style .right-part p,
+.timeline-second-style .right-part p > * 
+{
+  font-size: 0.92em;
+}
+
+.timeline-second-style .divider 
+{
+  position: absolute;
+  top: 0;
+  left: 30%;
+  bottom: 0;
+  width: 1px;
+  background-color: #eee;
+}
+
+.timeline-second-style .divider:after 
+{
+  content: '';
+  display: block;
+  margin-top: 7px;
+  width: 11px;
+  height: 11px;
+  margin-left: -5px;
+  border-radius: 5px;
+  border: 2px solid #ffcd38;
+  background-color: #fff;
+}
+
+.timeline-second-style .item-title 
+{
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.timeline-second-style .item-period 
+{
+  margin: 3px 0;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.timeline-second-style .item-company 
+{
+  display: block;
+  color: #aaa;
+  margin: 0 0 4px;
+  font-size: 12px;
+  line-height: 1.45em;
+}
+
+.timeline-second-style .timeline-item:last-child .right-part 
+{
+  padding-bottom: 0;
+}
+
+.timeline-second-style .item-logo 
+{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeline-second-style .item-logo img 
+{
+  max-height: 40px;
+}
+
 /* Contact
 -----------------------------------------------*/
 
@@ -629,9 +730,37 @@ footer::before
     width: 100%;
     padding: 0 16px;
   }
+  
+  .timeline-second-style .timeline-item 
+    {
+    position: relative;
+    display: block;
+  }
+
+  .timeline-second-style .left-part 
+  {
+    width: 100%;
+    display: block;
+    padding-left: 25px;
+    min-height: 100%;
+    text-align: left;
+  }
+
+  .timeline-second-style .divider 
+  {
+    left: 12px;
+  }
+
+  .timeline-second-style .right-part 
+  {
+    width: 100%;
+    display: block;
+    padding-left: 25px;
+    padding-right: 0;
+  }
 }
 
-@media screen and  (max-width: 768px) 
+@media screen and (max-width: 768px) 
 {
   #grid li 
   {
@@ -644,7 +773,7 @@ footer::before
   }
 }
 
-@media (max-width: 600px) 
+@media screen and (max-width: 600px) 
 {
   #grid li 
   {
