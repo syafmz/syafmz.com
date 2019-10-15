@@ -40,7 +40,7 @@ ol,ul{list-style:none;}
 a{cursor: pointer;outline: 0;}
 a img{border: 0;text-decoration: none;}
 a:link, a:visited{color: #dabd9f;text-decoration: none;}       /* unvisited link, visited link */
-a:hover, a:active{color: #e0eaf2;text-decoration: underline;}  /* mouse over link, selected link */
+a:hover{color: #e0eaf2;text-decoration: underline;}  /* mouse over link, selected link */
 a[href] *{cursor: pointer;}
 
 blockquote 
@@ -256,8 +256,7 @@ body
   filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
-#socials li a:hover img, 
-#socials li a:active img
+#socials li a:hover img
 {
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
@@ -290,8 +289,7 @@ body
   transition: transform .25s, visibility .25s ease-in;
 }
 
-#about label:hover,
-#about label:active
+#about label:hover
 {
   transform: scale(1.04);
 }
