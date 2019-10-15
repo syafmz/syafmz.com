@@ -1,693 +1,608 @@
 <!--
-* Designed and developed by Alfi Lee for http://syafmz.com
-* Email	: akulahalfi@aol.com
-* Version	: 1.0
-* Created on	: 2019.10.01
-* Updated on    : 2019.10.01
-* Description	: index.html
--->
-
+  * Designed and developed by Alfi Lee for http://syafmz.com
+  * Email	: akulahalfi@aol.com
+  * Version	: 1.0
+  * Created on	: 2019.10.01
+  * Updated on    : 2019.10.01
+  * Description	: index.html
+  -->
 <!doctype html>
 <html class="no-js" lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Syafiqah Zailani - 2D Generalist based in Singapore</title>
-  <meta name="author" content="Syafiqah Zailani" />
-  <meta name="revised" content="2019/10/01" />
-  <meta name="description" content="Syafmz is a web resume of 2D Generalist, Syafiqah Zailani, based in Singapore who brings years of experience in UI/UX with interactive and visual design.">
-  <meta name="keywords" content="syafmz, syxfmz, syafiqah, zailani, gg, com, ui, ux, designer, 2d, generalist, educator, singapore, republic, polytechnic, digipen, institute, technology, resume" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#34373d">
-</head>
-
-<body>
-  <!--[if IE]>
+  <head>
+    <meta charset="utf-8">
+    <title>Syafiqah Zailani - 2D Generalist based in Singapore</title>
+    <meta name="author" content="Syafiqah Zailani" />
+    <meta name="revised" content="2019/10/01" />
+    <meta name="description" content="Syafmz is a web resume of 2D Generalist, Syafiqah Zailani, based in Singapore who brings years of experience in UI/UX with interactive and visual design.">
+    <meta name="keywords" content="syafmz, syxfmz, syafiqah, zailani, gg, com, ui, ux, designer, 2d, generalist, educator, singapore, republic, polytechnic, digipen, institute, technology, resume" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#34373d">
+  </head>
+  <body>
+    <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <div id="header">
-    <div class="container">
-      <div class="section group">
-        <div class="col span_1_of_3">
-          <div id="menu">
-            <ul>
-              <li><a href="#about" class="btn" onclick="openContent('about', 0), currentSlide(1)" title="About">About</a></li>
-              <li><a href="#portfolio" class="btn" onclick="openContent('portfolio', 1)" title="Portfolio">Portfolio</a></li>
-              <li><a href="#resume" class="btn" onclick="openContent('resume', 2)" title="Résumé">Résumé</a></li>
-              <li><a href="#contact" class="btn" onclick="openContent('contact', 3)" title="Contact">Contact</a></li>
-            </ul>
-          </div><!-- /menu -->
-        </div><!-- .col -->
-        
-        <div class="col span_1_of_3">
-          <div id="title">
-            <a href="" title="Syafmz"><img src="img/title.png" alt="Syafiqah Zailani"/></a>
-          </div><!-- /title -->
-        </div><!-- .col -->
-        
-        <div class="col span_1_of_3">
-          <div id="socials">
-            <ul>
-              <li><a href="https://syafmz.artstation.com/" target="_blank" title="Checkout my artwork!"><img src="img/socials/as.png" alt="Artstation"/></a></li>
-              <li><a href="https://www.instagram.com/syxfmz/" target="_blank" title="Follow Me!"><img src="img/socials/ig.png" alt="Instagram"/></a></li>
-              <li><a href="https://www.linkedin.com/in/syafmz" target="_blank" title="Let's get professional!"><img src="img/socials/li.png" alt="LinkedIn"/></a></li>
-              <li><a href="mailto:syafiqahzailani2694@gmail.com" target="_blank" title="Get in touch!"><img src="img/socials/gm.png" alt="Gmail"/></a></li>
-            </ul>
-          </div><!-- /socials --> 
-        </div><!-- .col -->
-      </div><!-- .section -->
-    </div><!-- .container -->
-  </div><!-- /header -->
-  
-  <div id="about" class="content">
-    <div class="container">
-      <h1>Hello, I'm <label id="about-me" onclick="currentSlide(1)">Syafiqah</label></h1>
-      <h1><label id="about-generalist" onclick="currentSlide(2)">2D Generalist</label></h1>
-      <h1><label id="about-educator" onclick="currentSlide(3)">Educator,</label> <label id="about-gamer" onclick="currentSlide(4)">Gamer,</label> and <label id="about-catlover" onclick="currentSlide(5)">Cat-Lover</label></h1>
-      
-      <div id="slideshow">
-        <div class="slideshow-inner">
-          <div class="mySlides">
-            <div class="flexbox">
-              <div class="column">
-                <h2>Who am I?</h2>
-                <p>
-                <strong>
-                  My name is Nurul Syafiqah Bte Mohamad Zailani. I'm a <script src="js/age.js"></script> year old 2D Generalist based in Singapore.
-                </strong>
-                </p>
-                <p>
-                I am currently a final year undergrad of DigiPen Institute of Technology Singapore majoring in Digital Art and Animation.
-                </p>
-                <p>
-                My field of work is in digital arts. I do mostly illustration for print media and develop user ideas on screen employing interactive and visual design. To me, user experience is everything!
-                </p>
-              </div><!-- .column -->
-              <div class="column">
-                <img src="img/about/me.jpg" alt="about-me"/>
-              </div><!-- .column -->      
-            </div><!-- .flexbox -->
-          </div><!-- .mySlides --> 
-
-          <div class="mySlides">
-            <div class="flexbox">
-              <div class="column">
-                <h2>2D Generalist</h2>
-                <p>
-                The nature of my studies has taught me a vast variety of 2D skills. This includes UI/UX design, graphic design, storyboarding, animatics, concept art, asset creation, illustration and matte painting. 
-                </p>
-                <p>I leverage upon these unique skill set to value add and contribute on business objectives. To continue growing as an artist, I am self-motivated to keep learning and jump on opportunities that will allow me to do so.
-                </p>
-              </div><!-- .column -->
-              <div class="column">
-                <img src="img/about/generalist.jpg" alt="about-generalist"/>
-              </div><!-- .column -->
-            </div><!-- .flexbox -->
-          </div><!-- .mySlides -->
-
-          <div class="mySlides">
-            <div class="flexbox">
-              <div class="column">
-                <h2>Educator</h2>
-                <p>
-                Apart from being a full-time undergrad, I spend a good deal of time working as a freelance art teacher in Artary. I teach students how to paint, draw, and create art using various mediums.
-                </p>
-                <p>
-                I believe in the phrase,
-                </p>
-                <blockquote cite="Phil Collins">
-                In learning you will teach, and in teaching you will learn.
-                </blockquote>
-                <p>
-                Balancing both creating and teaching art have been a source of absolute joy for me. Not only am I able to hone my craft as an artist, but I see every child as an opportunity to influence art in society.
-                </p>
-              </div><!-- .column -->
-              <div class="column">
-                <img src="img/about/educator.jpg" alt="about-educator"/>
-              </div><!-- .column -->
-            </div><!-- .flexbox -->
-          </div><!-- .mySlides -->
-
-          <div class="mySlides">
-            <div class="flexbox">
-              <div class="column">
-                <h2>Gamer</h2>
-                <p>
-                When I'm not working, I enjoy gaming with my friends and have recently built myself a custom gaming PC to play some of the newest releases. 
-                </p>
-                <p>
-                Some titles I spent countless hours on are Defense of the Ancients (DotA), Dota Underlords, Don't Starve Together, Overcooked! and many more.
-                </p>
-              </div><!-- .column -->
-              <div class="column">
-                <img src="img/about/gamer.jpg" alt="about-gamer"/>
-              </div><!-- .column -->
-            </div><!-- .flexbox -->
-          </div><!-- .mySlides -->
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div id="header">
+      <div class="container">
+        <div class="section group">
+          <div class="col span_1_of_3">
+            <div id="menu">
+              <ul>
+                <li><a href="#about" class="btn" onclick="openContent('about', 0), currentSlide(1)" title="About">About</a></li>
+                <li><a href="#portfolio" class="btn" onclick="openContent('portfolio', 1)" title="Portfolio">Portfolio</a></li>
+                <li><a href="#resume" class="btn" onclick="openContent('resume', 2)" title="Résumé">Résumé</a></li>
+                <li><a href="#contact" class="btn" onclick="openContent('contact', 3)" title="Contact">Contact</a></li>
+              </ul>
+            </div><!-- /menu -->
+          </div><!-- .col -->
           
-          <div class="mySlides">
-            <div class="flexbox">
-              <div class="column">
-                <h2>Cat-Lover</h2>
-                <p>
-                If you're also a cat lover, then we're already friends!
-                </p>
-                <p>
-                My love for fluffy feline stretch back to my early childhood when I rescued a cat trapped in a fire hose reel cabinet. Since then, I took it upon myself to care for them and have personally rescued several more lost and distressed cats.
-                </p>
-                <p>
-                Being around them calms me and I instantly feel at peace even in the worst days. Their curiosity, playfulness, and independence, pretty much shaped me into the person I am today.
-                </p>
-              </div><!-- .column -->
-              <div class="column">
-                <img src="img/about/catlover.jpg" alt="about-catlover"/>
-              </div><!-- .column -->
-            </div><!-- .flexbox -->
-          </div><!-- .mySlides -->
-        </div><!-- .slideshow-inner -->
-      </div><!-- /slideshow -->      
-    </div><!-- .container -->
-  </div><!-- /about -->
-
-  <div id="portfolio" class="content">
-    <div class="container">
-      <ul id="grid">
-				<li>
-          <a class="grid-cell" href="#">
+          <div class="col span_1_of_3">
+            <div id="title">
+              <a href="" title="Syafmz"><img src="img/title.png" alt="Syafiqah Zailani"/></a>
+            </div><!-- /title -->
+          </div><!-- .col -->
+          
+          <div class="col span_1_of_3">
+            <div id="socials">
+              <ul>
+                <li><a href="https://syafmz.artstation.com/" target="_blank" title="Checkout my artwork!"><img src="img/socials/as.png" alt="Artstation"/></a></li>
+                <li><a href="https://www.instagram.com/syxfmz/" target="_blank" title="Follow Me!"><img src="img/socials/ig.png" alt="Instagram"/></a></li>
+                <li><a href="https://www.linkedin.com/in/syafmz" target="_blank" title="Let's get professional!"><img src="img/socials/li.png" alt="LinkedIn"/></a></li>
+                <li><a href="mailto:syafiqahzailani2694@gmail.com" target="_blank" title="Get in touch!"><img src="img/socials/gm.png" alt="Gmail"/></a></li>
+              </ul>
+            </div><!-- /socials --> 
+          </div><!-- .col -->
+        </div><!-- .section -->
+      </div><!-- .container -->
+    </div><!-- /header -->
+    
+    <div id="about" class="content">
+      <div class="container">
+        <h1>Hello, I'm <label id="about-me" onclick="currentSlide(1)">Syafiqah</label></h1>
+        <h1><label id="about-generalist" onclick="currentSlide(2)">2D Generalist</label></h1>
+        <h1><label id="about-educator" onclick="currentSlide(3)">Educator,</label> <label id="about-gamer" onclick="currentSlide(4)">Gamer,</label> and <label id="about-catlover" onclick="currentSlide(5)">Cat-Lover</label></h1>
+        <div id="slideshow">
+          <div class="slideshow-inner">
+            <div class="mySlides">
+              <div class="flexbox">
+                <div class="column">
+                  <h2>Who am I?</h2>
+                  <p>
+                    <strong>
+                      My name is Nurul Syafiqah Bte Mohamad Zailani. I'm a <script src="js/age.js"></script> year old 2D Generalist based in Singapore.
+                    </strong>
+                  </p>
+                  <p>
+                    I am currently a final year undergrad of DigiPen Institute of Technology Singapore majoring in Digital Art and Animation.
+                  </p>
+                  <p>
+                    My field of work is in digital arts. I do mostly illustration for print media and develop user ideas on screen employing interactive and visual design. To me, user experience is everything!
+                  </p>
+                </div><!-- .column -->
+                
+                <div class="column">
+                  <img src="img/about/me.jpg" alt="about-me"/>
+                </div><!-- .column -->      
+              </div><!-- .flexbox -->
+            </div><!-- .mySlides --> 
+            
+            <div class="mySlides">
+              <div class="flexbox">
+                <div class="column">
+                  <h2>2D Generalist</h2>
+                  <p>
+                    The nature of my studies has taught me a vast variety of 2D skills. This includes UI/UX design, graphic design, storyboarding, animatics, concept art, asset creation, illustration and matte painting. 
+                  </p>
+                  <p>I leverage upon these unique skill set to value add and contribute to business objectives. To continue growing as an artist, I am self-motivated to keep learning and jump on opportunities that will allow me to do so.
+                  </p>
+                </div><!-- .column -->
+                
+                <div class="column">
+                  <img src="img/about/generalist.jpg" alt="about-generalist"/>
+                </div><!-- .column -->
+              </div><!-- .flexbox -->
+            </div><!-- .mySlides -->
+            
+            <div class="mySlides">
+              <div class="flexbox">
+                <div class="column">
+                  <h2>Educator</h2>
+                  <p>
+                    Apart from being a full-time undergrad, I spend a good deal of time working as a freelance art teacher in Artary. I teach students how to paint, draw, and create art using various mediums.
+                  </p>
+                  <p>
+                    I believe in the phrase,
+                  </p>
+                  <blockquote cite="Phil Collins">
+                    In learning you will teach, and in teaching you will learn.
+                  </blockquote>
+                  <p>
+                    Balancing both creating and teaching art have been a source of absolute joy for me. Not only am I able to hone my craft as an artist, but I see every child as an opportunity to influence art in society.
+                  </p>
+                </div><!-- .column -->
+                
+                <div class="column">
+                  <img src="img/about/educator.jpg" alt="about-educator"/>
+                </div><!-- .column -->
+              </div><!-- .flexbox -->
+            </div><!-- .mySlides -->
+            
+            <div class="mySlides">
+              <div class="flexbox">
+                <div class="column">
+                  <h2>Gamer</h2>
+                  <p>
+                    When I'm not working, I enjoy gaming with my friends and have recently built myself a custom gaming PC to play some of the newest releases. 
+                  </p>
+                  <p>
+                    Some titles I spent countless hours on are Defense of the Ancients (DotA), Dota Underlords, Don't Starve Together, Overcooked! and many more.
+                  </p>
+                </div><!-- .column -->
+                
+                <div class="column">
+                  <img src="img/about/gamer.jpg" alt="about-gamer"/>
+                </div><!-- .column -->
+              </div><!-- .flexbox -->
+            </div><!-- .mySlides -->
+            
+            <div class="mySlides">
+              <div class="flexbox">
+                <div class="column">
+                  <h2>Cat-Lover</h2>
+                  <p>
+                    If you're also a cat lover, then we're already friends!
+                  </p>
+                  <p>
+                    My love for fluffy feline stretch back to my early childhood when I rescued a cat trapped in a fire hose reel cabinet. Since then, I took it upon myself to care for them and have personally rescued several more lost and distressed cats.
+                  </p>
+                  <p>
+                    Being around them calms me and I instantly feel at peace even in the worst days. Their curiosity, playfulness, and independence, pretty much shaped me into the person I am today.
+                  </p>
+                </div><!-- .column -->
+                <div class="column">
+                  <img src="img/about/catlover.jpg" alt="about-catlover"/>
+                </div><!-- .column -->
+              </div><!-- .flexbox -->
+            </div><!-- .mySlides -->
+          </div><!-- .slideshow-inner -->
+        </div><!-- /slideshow -->      
+      </div><!-- .container -->
+    </div><!-- /about -->
+    
+    <div id="portfolio" class="content">
+      <div class="container">
+        <ul id="grid">
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/1.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/2.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/3.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/4.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/5.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/6.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/7.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/8.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/9.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/10.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/11.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/12.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/13.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/14.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/15.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/16.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/17.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/18.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/19.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/20.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/21.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/22.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/23.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/24.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/25.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/26.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/27.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/28.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/29.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/30.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/31.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/32.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/33.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/34.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/35.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/36.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/37.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/38.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/39.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-				<li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/40.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-        <li>
-          <a class="grid-cell" href="#">
+            </a>
+          </li>
+          <li>
+            <a class="grid-cell" href="#">
             <img class="grid-img" src="img/portfolio/41.jpg"/>
             <span class="grid-overlay"></span>
             <span class="grid-text">Lorem Ipsum Dolor</span>
-          </a>
-        </li>
-			</ul>
-    </div><!-- .container -->
-  </div><!-- /portfolio -->
-  
-  <div id="resume" class="content">
-    <div class="container">
-      					<section data-id="resume" data-title="Resume" class="pt-page pt-page-resume">
-				<div class="section-inner custom-page-content">
-					<div class="section-content">
-						<div class="fw-page-builder-content"><section class="fw-main-row "  >
-	<div class="fw-container">
-  
-  <div class="row">
-	
-
-<div class=" col-xs-12 col-sm-12 ">
-    <div id="col_inner_id-5da5b5f9bde52" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		
-<div class="block-title">
-    <h3>Experience<span></span></h3>
-</div>
-	</div>
-</div>
-</div>
-
-<div class="row">
-	
-
-<div class=" col-xs-12 col-sm-12 ">
-    <div id="col_inner_id-5da5b5f9be42e" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		
-
-<div id="timeline-5da5b5f9be814" class="timeline timeline-second-style clearfix">
-					<div class="timeline-item clearfix">
-			<div class="left-part">
-				<h5 class="item-period">2019 - Present</h5>
-				<span class="item-company">UTS Printing and Publishing Services<br>Singapore</span>
-							</div>
-			<div class="divider"></div>
-			<div class="right-part">
-				<h4 class="item-title">Freelance Illustrator</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus sapien. Vivamus dictum nec lectus id pulvinar. Integer molestie fermentum augue quis mattis. Mauris sit amet est metus. Pellentesque quis elit ac nulla blandit sollicitudin commodo a magna. Integer ac eros ac nibh pulvinar gravida. Sed varius commodo sapien euismod malesuada. Maecenas at mollis turpis. Etiam sodales mi eget erat auctor sagittis. Ut quis pretium nunc, et consectetur nulla. Quisque consequat libero sed iaculis fermentum.</p>
-			</div>
-		</div>
-							<div class="timeline-item clearfix">
-			<div class="left-part">
-				<h5 class="item-period">2017 - Present</h5>
-				<span class="item-company">ARTARY<br>Academy of Children's Art</span>
-							</div>
-			<div class="divider"></div>
-			<div class="right-part">
-				<h4 class="item-title">Freelance Art Teacher</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus sapien. Vivamus dictum nec lectus id pulvinar. Integer molestie fermentum augue quis mattis. Mauris sit amet est metus. Pellentesque quis elit ac nulla blandit sollicitudin commodo a magna. Integer ac eros ac nibh pulvinar gravida. Sed varius commodo sapien euismod malesuada. Maecenas at mollis turpis. Etiam sodales mi eget erat auctor sagittis. Ut quis pretium nunc, et consectetur nulla. Quisque consequat libero sed iaculis fermentum.</p>
-			</div>
-		</div>
-							<div class="timeline-item clearfix">
-			<div class="left-part">
-				<h5 class="item-period">2013</h5>
-				<span class="item-company">JurongHealth Campus<br>Alexandra Hospital</span>
-							</div>
-			<div class="divider"></div>
-			<div class="right-part">
-				<h4 class="item-title">Multimedia Specialist Intern</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus sapien. Vivamus dictum nec lectus id pulvinar. Integer molestie fermentum augue quis mattis. Mauris sit amet est metus. Pellentesque quis elit ac nulla blandit sollicitudin commodo a magna. Integer ac eros ac nibh pulvinar gravida. Sed varius commodo sapien euismod malesuada. Maecenas at mollis turpis. Etiam sodales mi eget erat auctor sagittis. Ut quis pretium nunc, et consectetur nulla. Quisque consequat libero sed iaculis fermentum.</p>
-			</div>
-		</div>
-			</div>
-	</div>
-</div>
-</div>
-  
-<div class="row">
-	
-
-<div class=" col-xs-12 col-sm-12 ">
-    <div id="col_inner_id-5da5b5f9bd80b" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		
-	<div class="fw-divider-space" style="padding-top: 30px;"></div>
-	</div>
-</div>
-</div>
-
-
-
-		<div class="row">
-	
-
-<div class=" col-xs-12 col-sm-12 ">
-    <div id="col_inner_id-5da5b5f9bc9e3" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		
-<div class="block-title">
-    <h3>Education<span></span></h3>
-</div>
-	</div>
-</div>
-</div>
-
-<div class="row">
-	
-
-<div class=" col-xs-12 col-sm-12 ">
-    <div id="col_inner_id-5da5b5f9bd00e" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		
-
-<div id="timeline-5da5b5f9bd2e0" class="timeline timeline-second-style clearfix">
-					<div class="timeline-item clearfix">
-			<div class="left-part">
-				<h5 class="item-period">2014 - Present</h5>
-				<span class="item-company">DigiPen Institute of Technology<br>Singapore</span>
-							</div>
-			<div class="divider"></div>
-			<div class="right-part">
-				<h4 class="item-title">Bachelor of Fine Arts in Digital Art and Animation</h4>
-				<p>Awarded Commissioner of Police Study Award (Singapore Police Force) for 2 consecutive years in 2016 and 2017</p>
-			</div>
-		</div>
-							<div class="timeline-item clearfix">
-			<div class="left-part">
-				<h5 class="item-period">2011 - 2014</h5>
-				<span class="item-company">Republic Polytechnic<br>School of Technology for the Arts</span>
-							</div>
-			<div class="divider"></div>
-			<div class="right-part">
-				<h4 class="item-title">Diploma in Design for Interactivity</h4>
-				<p>Inducted into Director's Roll of Honour in 2014</p>
-			</div>
-		</div>
-			</div>
-	</div>
-</div>
-</div>
-
-<div class="row">
-	
-
-<div class=" col-xs-12 col-sm-12 ">
-    <div id="col_inner_id-5da5b5f9bd80b" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		
-	<div class="fw-divider-space" style="padding-top: 30px;"></div>
-	</div>
-</div>
-</div>
-
-<div class="row">
-	
-
-<div class=" col-xs-12 col-sm-12 ">
-    <div id="col_inner_id-5da5b5f9bf5b5" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		
-<div class="block-title">
-    <h3>Voluteer Experience<span></span></h3>
-</div>
-	</div>
-</div>
-</div>
-
-<div class="row">
-	
-
-<div class=" col-xs-12 col-sm-12 ">
-    <div id="col_inner_id-5da5b5f9bfb78" class="fw-col-inner" data-paddings="0px 0px 0px 0px">
-		
-
-<div id="timeline-5da5b5f9bfe5c" class="timeline timeline-second-style clearfix">
-					<div class="timeline-item clearfix">
-			<div class="left-part">
-				<h5 class="item-period">2012</h5>
-				<span class="item-company">People's Association<br>Bukit Batok Community Club</span>
-							</div>
-			<div class="divider"></div>
-			<div class="right-part">
-				<h4 class="item-title">Mentor for Malay Activity Executive Committees (MAECs)</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus sapien. Vivamus dictum nec lectus id pulvinar. Integer molestie fermentum augue quis mattis. Mauris sit amet est metus. Pellentesque quis elit ac nulla blandit sollicitudin commodo a magna. Integer ac eros ac nibh pulvinar gravida. Sed varius commodo sapien euismod malesuada. Maecenas at mollis turpis. Etiam sodales mi eget erat auctor sagittis. Ut quis pretium nunc, et consectetur nulla. Quisque consequat libero sed iaculis fermentum.</p>
-			</div>
-		</div>
-			</div>
-	</div>
-</div>
-</div>
-
-	</div>
-</section>
-</div>
-					</div>
-				</div>
-			</section>
-    </div><!-- .container -->
-  </div><!-- /resume -->
-
-  <div id="contact" class="content">
-    <div class="container">
-      <h5>CONTACT</h5>
-    </div><!-- .container -->
-  </div><!-- /contact -->
-
-  <footer>
-    <div class="container">
-      Copy to your heart's content &copy; <script src="js/footer.js"></script>, 
-      <a href="" title="Syafmz">syafmz.com</a><br>
-      Brought to you by <a href="https://hover.com/NLXdb9Iy" target="_blank" title="Hover">Hover</a> | 
-      Powered by <a href="https://github.com/syafmz" target="_blank" title="GitHub">GitHub</a>
-    </div><!-- .container -->
-  </footer>
-  
-  <!-- Link javascript here -->
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/content.js"></script>
-  <script src="js/headerBorder.js"></script>
-  <script src="js/slideshow.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+            </a>
+          </li>
+        </ul>
+      </div><!-- .container -->
+    </div><!-- /portfolio -->
+    
+    <div id="resume" class="content">
+      <div class="container">
+        <div class="row">
+          <div class="block-title">
+            <h3>Experience<span></span></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div id="timeline-5da5b5f9be814" class="timeline timeline-second-style clearfix">
+            <div class="timeline-item clearfix">
+              <div class="left-part">
+                <h5 class="item-period">2019 - Present</h5>
+                <span class="item-company">UTS Printing and Publishing Services<br>Singapore</span>
+              </div>
+              <div class="divider"></div>
+              <div class="right-part">
+                <h4 class="item-title">Freelance Illustrator</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus sapien. Vivamus dictum nec lectus id pulvinar. Integer molestie fermentum augue quis mattis. Mauris sit amet est metus. Pellentesque quis elit ac nulla blandit sollicitudin commodo a magna. Integer ac eros ac nibh pulvinar gravida. Sed varius commodo sapien euismod malesuada. Maecenas at mollis turpis. Etiam sodales mi eget erat auctor sagittis. Ut quis pretium nunc, et consectetur nulla. Quisque consequat libero sed iaculis fermentum.</p>
+              </div>
+            </div>
+            <div class="timeline-item clearfix">
+              <div class="left-part">
+                <h5 class="item-period">2017 - Present</h5>
+                <span class="item-company">ARTARY<br>Academy of Children's Art</span>
+              </div>
+              <div class="divider"></div>
+              <div class="right-part">
+                <h4 class="item-title">Freelance Art Teacher</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus sapien. Vivamus dictum nec lectus id pulvinar. Integer molestie fermentum augue quis mattis. Mauris sit amet est metus. Pellentesque quis elit ac nulla blandit sollicitudin commodo a magna. Integer ac eros ac nibh pulvinar gravida. Sed varius commodo sapien euismod malesuada. Maecenas at mollis turpis. Etiam sodales mi eget erat auctor sagittis. Ut quis pretium nunc, et consectetur nulla. Quisque consequat libero sed iaculis fermentum.</p>
+              </div>
+            </div>
+            <div class="timeline-item clearfix">
+              <div class="left-part">
+                <h5 class="item-period">2013</h5>
+                <span class="item-company">JurongHealth Campus<br>Alexandra Hospital</span>
+              </div>
+              <div class="divider"></div>
+              <div class="right-part">
+                <h4 class="item-title">Multimedia Specialist Intern</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus sapien. Vivamus dictum nec lectus id pulvinar. Integer molestie fermentum augue quis mattis. Mauris sit amet est metus. Pellentesque quis elit ac nulla blandit sollicitudin commodo a magna. Integer ac eros ac nibh pulvinar gravida. Sed varius commodo sapien euismod malesuada. Maecenas at mollis turpis. Etiam sodales mi eget erat auctor sagittis. Ut quis pretium nunc, et consectetur nulla. Quisque consequat libero sed iaculis fermentum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="fw-divider-space" style="padding-top: 30px;"></div>
+        </div>
+        <div class="row">
+          <div class="block-title">
+            <h3>Education<span></span></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div id="timeline-5da5b5f9bd2e0" class="timeline timeline-second-style clearfix">
+            <div class="timeline-item clearfix">
+              <div class="left-part">
+                <h5 class="item-period">2014 - Present</h5>
+                <span class="item-company">DigiPen Institute of Technology<br>Singapore</span>
+              </div>
+              <div class="divider"></div>
+              <div class="right-part">
+                <h4 class="item-title">Bachelor of Fine Arts in Digital Art and Animation</h4>
+                <p>Awarded Commissioner of Police Study Award (Singapore Police Force) for 2 consecutive years in 2016 and 2017</p>
+              </div>
+            </div>
+            <div class="timeline-item clearfix">
+              <div class="left-part">
+                <h5 class="item-period">2011 - 2014</h5>
+                <span class="item-company">Republic Polytechnic<br>School of Technology for the Arts</span>
+              </div>
+              <div class="divider"></div>
+              <div class="right-part">
+                <h4 class="item-title">Diploma in Design for Interactivity</h4>
+                <p>Inducted into Director's Roll of Honour in 2014</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="fw-divider-space" style="padding-top: 30px;"></div>
+        </div>
+        <div class="row">
+          <div class="block-title">
+            <h3>Voluteer Experience<span></span></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div id="timeline-5da5b5f9bfe5c" class="timeline timeline-second-style clearfix">
+            <div class="timeline-item clearfix">
+              <div class="left-part">
+                <h5 class="item-period">2012</h5>
+                <span class="item-company">People's Association<br>Bukit Batok Community Club</span>
+              </div>
+              <div class="divider"></div>
+              <div class="right-part">
+                <h4 class="item-title">Mentor for Malay Activity Executive Committees (MAECs)</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut tellus sapien. Vivamus dictum nec lectus id pulvinar. Integer molestie fermentum augue quis mattis. Mauris sit amet est metus. Pellentesque quis elit ac nulla blandit sollicitudin commodo a magna. Integer ac eros ac nibh pulvinar gravida. Sed varius commodo sapien euismod malesuada. Maecenas at mollis turpis. Etiam sodales mi eget erat auctor sagittis. Ut quis pretium nunc, et consectetur nulla. Quisque consequat libero sed iaculis fermentum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- .container -->
+    </div><!-- /resume -->
+    
+    <div id="contact" class="content">
+      <div class="container">
+        <h5>CONTACT</h5>
+      </div><!-- .container -->
+    </div><!-- /contact -->
+    
+    <footer>
+      <div class="container">
+        Copy to your heart's content &copy; <script src="js/footer.js"></script>, 
+        <a href="" title="Syafmz">syafmz.com</a><br>
+        Brought to you by <a href="https://hover.com/NLXdb9Iy" target="_blank" title="Hover">Hover</a> | 
+        Powered by <a href="https://github.com/syafmz" target="_blank" title="GitHub">GitHub</a>
+      </div><!-- .container -->
+    </footer>
+    
+    <!-- Link javascript here -->
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/headerBorder.js"></script>
+    <script src="js/slideshow.js"></script>
+    
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
