@@ -565,7 +565,7 @@ footer::before
 .clearfix:before,.clearfix:after{content: " ";display: table;}
 .clearfix:after{clear: both;}
 
-@media screen and (max-width: 988px) 
+@media screen and (max-width: 1024px) 
 {
   #menu li
   {
@@ -584,7 +584,7 @@ footer::before
   }
 } 
 
-@media screen and (max-width: 838px) 
+@media screen and (max-width: 850px) 
 {
   #menu li
   {
@@ -603,7 +603,7 @@ footer::before
   }
 } 
 
-@media screen and (max-width: 738px) 
+@media screen and (max-width: 750px) 
 {
   #menu
   {
