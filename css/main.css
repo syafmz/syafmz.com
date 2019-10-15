@@ -21,7 +21,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
    
-html, body{margin: 0;padding: 0;color: #e0eaf2;font-size: 1em;line-height: 1.4;height: 100%;}
+html, body{margin: 0;padding: 0;color: #e0eaf2;font-size: 0.875em;line-height: 1.4;height: 100%;}
 
 ::-moz-selection{background: #329bfa;color: #34373d;text-shadow: none;}
 ::selection{background: #329bfa;color: #34373d;text-shadow: none;}
@@ -74,7 +74,6 @@ blockquote:after
   content: "\2013 \2003" attr(cite);
   display: block;
   text-align: right;
-  font-size: 0.875em;
   color: #666;
 }
 
@@ -92,7 +91,6 @@ body
 { 
   color: #e0eaf2; 
   background: #34373d url('../img/bg.png');
-  font-size: 0.875em; 
   font-family: 'Quicksand', sans-serif;
   text-align: center; 
   display: flex;
@@ -229,7 +227,8 @@ body
   display: block;
   float: left;
   margin: 0;
-  padding: 16px 14px 0px;
+  padding: 16px 12px 0px;
+  font-size: 1em;
 }
 
 #menu li a 
@@ -299,7 +298,7 @@ body
   padding-top: 100px;
 }
 
-#about h5
+#about h1
 {
   font-weight: 400;
   font-size: 2.5em;
@@ -350,7 +349,7 @@ body
 
 #slideshow p
 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding: 0;
   text-align: justify;
   text-justify: inter-word;
@@ -532,7 +531,6 @@ body
 footer 
 {
 	border-top: 1px solid #4a4d54;
-	font-size: 0.909em;
 	padding: .5em 0;
 	position: relative;
 	text-align: right;
@@ -566,10 +564,11 @@ footer::before
 .clearfix:after{clear: both;}
 
 @media screen and (max-width: 992px) 
-{
+{  
   #menu li
   {
-    padding: 14px 4px 0px;
+    font-size: 0.8125em;
+    padding: 16px 8px 0px;
   }
   
   #socials li 
@@ -586,13 +585,9 @@ footer::before
 
 @media screen and (max-width: 768px) 
 {
-  #menu
-  {
-    font-size: 0.75em;
-  }
-  
   #menu li
   {
+    font-size: 0.75em;
     padding: 18px 4px 0px;
   }
   
@@ -636,7 +631,7 @@ footer::before
   
   #menu li
   {
-    font-size: 11px;
+    font-size: 12px;
     padding: 16px 14px 0px;
   }
   
