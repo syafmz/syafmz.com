@@ -14,7 +14,7 @@
     Highlight bg color:   #329bfa (Bright blue)
     Highlight text color: #34373d (Black)
     Hyperlink unactive:   #dabd9f (Beige)
-    Hyperlink active:     #e0eaf2 (Dark orange)
+    Hyperlink active:     #e0eaf2 (Pale blue)
    ========================================================================== */
 
 /* ==========================================================================
@@ -296,7 +296,7 @@ body
 
 #about
 {
-  margin-top: 150px;
+  padding-top: 150px;
 }
 
 #about h5
@@ -361,6 +361,7 @@ body
   border-radius: 50%;
   width: 70%;
   height: auto;
+  box-shadow:0 0 20px #4a4d54;
 }
 
 #slideshow .flexbox 
@@ -413,46 +414,100 @@ body
 
 #portfolio
 {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
-.grid 
+#grid 
 {
-	max-width: 69em;
-	list-style: none;
-	margin: 30px auto;
-	padding: 0;
+  max-width: 100%;
+  margin: 0 auto; 
+  padding: 0;
+  font-size: 0;
+  list-style: none;
 }
 
-.grid li 
+#grid li 
 {
-	display: block;
-	float: left;
-	padding: 7px;
-	width: 33%;
-	opacity: 1;  /* edit madafaka*/
+  display: inline-block;
+  *display: inline;    /*for IE6 - IE7*/
+  width: 25%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.grid li.shown,
-.no-js .grid li,
-.no-cssanimations .grid li 
+.grid-cell 
 {
-	opacity: 1;
+  margin: 12px;
+  box-shadow: 0 0 6px #4a4d54;
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
 
-.grid li a,
-.grid li img 
+.grid-img 
 {
-	outline: none;
-	border: none;
-	display: block;
-	max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+  transform: scale(1);
+  transition: all 1s;
 }
 
-.grid.effect-1 li.animate 
+#grid li:hover .grid-img 
 {
-	-webkit-animation: fadeIn 0.65s ease forwards;
-	animation: fadeIn 0.65s ease forwards;
+  transform: scale(1.05);
+}
+
+.grid-overlay 
+{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: #dabd9f;
+  background-size:50px 50px;
+  opacity: 0;
+  filter: alpha(opacity=0);    /*For IE6 - IE8*/
+  transition: all 0.6s;
+}
+
+#grid li:hover .grid-overlay 
+{
+  opacity: 0.6;
+}
+
+.grid-text 
+{
+  display: block;
+  padding: 0 30px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  top: 40%;
+  color: #e0eaf2;
+  text-shadow: 0px 2px 4px #000;
+  opacity: 0;
+  filter: alpha(opacity=0);    /*For older IE*/
+  transform: translateY(-20px);
+  transition: all 0.3s;
+}
+
+#grid li:hover .grid-text 
+{
+  transform: translateY(0px);
+  opacity: 0.9;
 }
 
 /* Resume
@@ -510,7 +565,7 @@ footer::before
 .clearfix:before,.clearfix:after{content: " ";display: table;}
 .clearfix:after{clear: both;}
 
-@media screen and (max-width: 61.5em) 
+@media screen and (max-width: 984px) 
 {
   #menu li
   {
@@ -523,15 +578,7 @@ footer::before
   }
 } 
 
-@media screen and (max-width: 56.25em) 
-{
-  .grid li 
-  {
-		width: 50%;
-	}
-} 
-
-@media screen and (max-width: 52.25em) 
+@media screen and (max-width: 836px) 
 {
   #menu li
   {
@@ -544,7 +591,7 @@ footer::before
   }
 } 
 
-@media screen and (max-width: 46em) 
+@media screen and (max-width: 736px) 
 {
   #menu
   {
@@ -562,7 +609,7 @@ footer::before
   }
 } 
 
-@media screen and (max-width: 37.5em) 
+@media screen and (max-width: 600px) 
 {
   body
   {
@@ -608,11 +655,31 @@ footer::before
   {
     padding: 10px 8px;
   } 
-  
-  .grid li 
+}
+
+@media screen and  (max-width: 736px) 
+{
+  #grid li 
   {
-		width: 100%;
-	}
+    width: 33.33%;
+  }
+  
+  .grid-text 
+  {
+    top: 30%;
+  }
+}
+
+@media (max-width: 600px) 
+{
+  #grid li 
+  {
+    width: 100%;
+  }
+  .grid-text 
+  {
+    top: 45%;
+  }
 }
 
 @media print,(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 1.25dppx),(min-resolution: 120dpi){}
