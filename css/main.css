@@ -584,7 +584,7 @@ footer::before
   }
 } 
 
-@media screen and (max-width: 850px) 
+@media screen and (max-width: 992px) 
 {
   #menu li
   {
@@ -603,7 +603,7 @@ footer::before
   }
 } 
 
-@media screen and (max-width: 750px) 
+@media screen and (max-width: 768px) 
 {
   #menu
   {
@@ -677,7 +677,7 @@ footer::before
   }
 }
 
-@media screen and  (max-width: 738px) 
+@media screen and  (max-width: 768px) 
 {
   #grid li 
   {
