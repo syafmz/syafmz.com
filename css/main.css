@@ -11,10 +11,12 @@
   Color swatch: 
     Bg color:             #34373d (Black)
     Text color:           #e0eaf2 (Pale blue)
+    Light text color:     #757575 (Light Grey)
     Highlight bg color:   #329bfa (Bright blue)
     Highlight text color: #34373d (Black)
     Hyperlink unactive:   #dabd9f (Beige)
     Hyperlink active:     #e0eaf2 (Pale blue)
+    Border:               #4a4d54 (Light Grey)
    ========================================================================== */
 
 /* ==========================================================================
@@ -48,7 +50,7 @@ blockquote
   display: block;
   border-width: 2px 0;
   border-style: solid;
-  border-color: #e0eaf2;
+  border-color: #4a4d54;
   padding: 1.5em 0 0.5em;
   margin: 1.5em 0;
   position: relative;
@@ -66,7 +68,7 @@ blockquote:before
   width: 3rem;
   height: 2rem;
   font: 6em/1.08em 'PT Sans', sans-serif;
-  color: #666;
+  color: #757575;
   text-align: center;
 }
 
@@ -75,7 +77,7 @@ blockquote:after
   content: "\2013 \2003" attr(cite);
   display: block;
   text-align: right;
-  color: #666;
+  color: #757575;
 }
 
 /* ==========================================================================
@@ -202,7 +204,7 @@ body
   text-decoration: none;
   font-weight: bold;
   color: #dabd9f;
-  text-shadow: 0px 2px 8px #000;
+  text-shadow: 0px 0px 8px #000;
 }
 
 #menu li a:hover
@@ -384,7 +386,7 @@ body
 
 #portfolio
 {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 #grid 
@@ -485,25 +487,35 @@ body
 
 #resume
 {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
-.timeline-second-style .timeline-item 
+#resume h1
+{
+  font-weight: 400;
+  font-size: 2.125em;
+  margin: 0.5em auto;
+  padding-left: 2%;
+  text-align: left;
+  text-decoration: underline #dabd9f;
+}
+
+.timeline .timeline-item 
 {
   position: relative;
   display: table;
   table-layout: fixed;
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
-.timeline-second-style .timeline-item:last-child 
+.timeline .timeline-item:last-child 
 {
-  padding-bottom: 0;
+  padding-bottom: 30px;
 }
 
 
-.timeline-second-style .left-part 
+.timeline .left-part 
 {
   width: 30%;
   display: table-cell;
@@ -513,7 +525,7 @@ body
   vertical-align: top;
 }
 
-.timeline-second-style .right-part 
+.timeline .right-part 
 {
   width: 70%;
   display: table-cell;
@@ -523,71 +535,71 @@ body
   text-align: left;
 }
 
-.timeline-second-style .right-part p,
-.timeline-second-style .right-part p > * 
+.timeline .right-part p,
+.timeline .right-part p > *
 {
-  font-size: 0.92em;
+  font-size: 1.3em;
+  margin: 8px 0 0;
+  padding-bottom: 4px;
 }
 
-.timeline-second-style .divider 
+.timeline .right-part i,
+.timeline .right-part i > *
+{
+  font-size: 1.1em;
+  margin: 8px 0 0;
+  padding-bottom: 4px;
+}
+
+.timeline .divider 
 {
   position: absolute;
   top: 0;
   left: 30%;
   bottom: 0;
   width: 1px;
-  background-color: #eee;
+  background-color: #4a4d54;
 }
 
-.timeline-second-style .divider:after 
+.timeline .divider:after 
 {
   content: '';
   display: block;
   margin-top: 7px;
-  width: 11px;
-  height: 11px;
   margin-left: -5px;
-  border-radius: 5px;
-  border: 2px solid #ffcd38;
-  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #dabd9f;
+  background-color: #34373d;
 }
 
-.timeline-second-style .item-title 
+.timeline .item-title 
 {
-  font-size: 16px;
+  font-size: 1.4em;
+  margin-top: 0px;
   margin-bottom: 3px;
 }
 
-.timeline-second-style .item-period 
+.timeline .item-period 
 {
   margin: 3px 0;
-  font-size: 14px;
+  font-size: 1.3em;
   line-height: 1.4em;
 }
 
-.timeline-second-style .item-company 
+.timeline .item-company 
 {
   display: block;
-  color: #aaa;
+  color: #757575;
   margin: 0 0 4px;
-  font-size: 12px;
+  font-size: 1.05em;
   line-height: 1.45em;
 }
 
-.timeline-second-style .timeline-item:last-child .right-part 
+.timeline .timeline-item:last-child .right-part 
 {
-  padding-bottom: 0;
-}
-
-.timeline-second-style .item-logo 
-{
-  display: block;
-  margin-bottom: 10px;
-}
-
-.timeline-second-style .item-logo img 
-{
-  max-height: 40px;
+  padding-bottom: 0px;
 }
 
 /* Contact
@@ -595,7 +607,7 @@ body
 
 #contact
 {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 /* Footer
@@ -622,6 +634,11 @@ footer::before
 	width: 100%;
 }
 
+footer .container
+{
+  padding-right: 1%;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -640,8 +657,8 @@ footer::before
 {  
   #menu li
   {
-    font-size: 0.84375em;
-    padding: 16px 8px 0px;
+    font-size: 1em;
+    padding: 16px 6px 0px;
   }
   
   #socials li 
@@ -700,7 +717,7 @@ footer::before
   
   #menu li
   {
-    font-size: 12px;
+    font-size: 1.2em;
     padding: 16px 14px 0px;
   }
   
@@ -730,29 +747,29 @@ footer::before
     padding: 0 16px;
   }
   
-  .timeline-second-style .timeline-item 
-    {
+  .timeline .timeline-item 
+  {
     position: relative;
     display: block;
   }
 
-  .timeline-second-style .left-part 
+  .timeline .left-part 
   {
-    width: 100%;
+    width: 90%;
     display: block;
     padding-left: 25px;
-    min-height: 100%;
+    padding-right: 0;
     text-align: left;
   }
 
-  .timeline-second-style .divider 
+  .timeline .divider 
   {
     left: 12px;
   }
 
-  .timeline-second-style .right-part 
+  .timeline .right-part 
   {
-    width: 100%;
+    width: 90%;
     display: block;
     padding-left: 25px;
     padding-right: 0;
