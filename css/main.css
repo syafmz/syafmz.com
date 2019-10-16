@@ -23,7 +23,19 @@
    Base styles: opinionated defaults
    ========================================================================== */
    
-html, body{margin: 0;padding: 0;color: #e0eaf2;font-size: 0.875em;line-height: 1.4;height: 100%;}
+html, 
+body
+{
+  margin: 0;
+  padding: 0;
+  color: #e0eaf2;
+  background: #34373d url('../img/bg.png');
+  font-family: 'Quicksand', sans-serif;
+  text-align: center; 
+  font-size: 0.875em;
+  line-height: 1.4;
+  height: 100%;
+}
 
 ::-moz-selection{background: #329bfa;color: #34373d;text-shadow: none;}
 ::selection{background: #329bfa;color: #34373d;text-shadow: none;}
@@ -81,27 +93,8 @@ blockquote:after
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
+   Preloader
    ========================================================================== */
-
-.browserupgrade{margin: 0.2em 0;background: #ccc;color: #000;padding: 0.2em 0;}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-   
-body 
-{ 
-  color: #e0eaf2; 
-  background: #34373d url('../img/bg.png');
-  font-family: 'Quicksand', sans-serif;
-  text-align: center; 
-  display: flex;
-  flex-direction: column;
-}
-
-/* Preloader
------------------------------------------------*/
 
 .no-js #loader 
 { 
@@ -127,8 +120,21 @@ body
 	background: url('../preloader.gif') center no-repeat #34373d;
 }
 
-/* Container
------------------------------------------------*/
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade{margin: 0.2em 0;background: #ccc;color: #000;padding: 0.2em 0;}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+body 
+{ 
+  display: flex;
+  flex-direction: column;
+}
 
 .container 
 {
