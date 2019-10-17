@@ -105,21 +105,16 @@ a img {
 }
 
 a:link,
-a:visited {
+a:visited,
+a:active {
   color: #dabd9f;
   text-decoration: none;
 }
-
-
-/* unvisited link, visited link */
 
 a:hover {
   color: #e0eaf2;
   text-decoration: underline;
 }
-
-
-/* mouse over link, selected link */
 
 a[href] * {
   cursor: pointer;
@@ -492,7 +487,7 @@ blockquote:after {
 /* ==========================================================================
    Button
    ========================================================================== */
-   
+
 .download {
   color: #dabd9f !important;
   text-transform: uppercase;
@@ -988,7 +983,8 @@ h2.title span:after {
   width: 60%;
   display: table-cell;
   padding-left: 25px;
-  padding-right: 15px;   /*ATTENTION*/
+  padding-right: 15px;
+  /*ATTENTION*/
   text-align: left;
   vertical-align: top;
 }
@@ -1000,7 +996,8 @@ h2.title span:after {
 .timeline .divider {
   position: absolute;
   top: 0;
-  left: 41%;    /*ATTENTION*/
+  left: 41%;
+  /*ATTENTION*/
   bottom: 0;
   width: 1px;
   background-color: #4a4d54;
@@ -1009,8 +1006,10 @@ h2.title span:after {
 .timeline .divider:after {
   content: '';
   display: block;
-  margin-top: 8px;   /*ATTENTION*/
-  margin-left: -5px;  /*ATTENTION*/
+  margin-top: 8px;
+  /*ATTENTION*/
+  margin-left: -5px;
+  /*ATTENTION*/
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1225,7 +1224,8 @@ footer .container {
   .timeline .right-part {
     width: 100%;
     display: block;
-    padding: 0px 0px 0px 25px;  /*ATTENTION*/
+    padding: 0px 0px 0px 25px;
+    /*ATTENTION*/
     min-height: 100%;
     text-align: left;
   }
@@ -1302,4 +1302,3 @@ footer .container {
     page-break-after: avoid;
   }
 }
-
