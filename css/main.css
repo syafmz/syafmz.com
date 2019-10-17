@@ -525,6 +525,8 @@ blockquote:after {
    ========================================================================== */
 
 body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
