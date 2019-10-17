@@ -225,14 +225,14 @@ blockquote:after {
 #skills {
   list-style: none;
   width: 90%;
-  margin: 0 auto;
+  margin: 25px auto 0;
   position: relative;
   line-height: 2em;
-  padding: 20px 0 0;
+  padding: 0;
 }
 
 #skills li {
-  margin: 25px auto;
+  margin: 25px 0;
   background: #34373d;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2e33), to(#34373d));
   background-image: -webkit-linear-gradient(top, #2b2e33, #34373d);
@@ -251,7 +251,6 @@ blockquote:after {
   position: relative;
   top: -20px;
   text-align: left;
-  font-weight: 400;
   font-size: 1.0em;
 }
 
@@ -489,11 +488,12 @@ blockquote:after {
    ========================================================================== */
 
 .download {
+  margin: 8px auto;
   color: #dabd9f !important;
   text-transform: uppercase;
   text-decoration: none;
   background: #34373d;
-  padding: 8px 12px;
+  padding: 8px 4px;
   border: 4px solid #dabd9f !important;
   display: inline-block;
   transition: all 0.4s ease 0s;
@@ -540,6 +540,7 @@ body {
   overflow: hidden;
   height: 100%;
 }
+
 
 .content {
   flex: 1 0 auto;
@@ -636,6 +637,7 @@ body {
   font-weight: bold;
   color: #dabd9f;
   text-shadow: 0px 0px 8px #000;
+  text-align: center;
 }
 
 #menu li a:hover {
@@ -658,6 +660,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: visible;
+  margin: 0;
   padding: 4px 0px;
 }
 
@@ -694,7 +697,7 @@ body {
 -----------------------------------------------*/
 
 #about .container {
-  padding-bottom: 10px;
+  padding: 0px 2% 20px;
 }
 
 #about h1 {
@@ -755,8 +758,13 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
   overflow: visible;
-  justify-content: center;
+  height: 100%;
 }
 
 #slideshow .flexbox .column:nth-child(1) {
@@ -895,6 +903,11 @@ body {
   overflow: visible;
 }
 
+#resume .container{
+  border: 1px solid black;
+  padding: 0px 2%;
+}
+
 #resume h1 {
   font-weight: 400;
   font-size: 2.125em;
@@ -909,31 +922,31 @@ body {
 
 #sidebar {
   position: relative;
-  display: table;
-  table-layout: fixed;
   width: 100%;
-  padding: 20px 0;
-  border-right: 1px solid #4a4d54;
+  margin: 0 auto;
+  padding: 20px 0 0;
   text-align: center;
-  overflow: hidden;
+  overflow: visible;
+  border-right: 1px dashed #4a4d54;
 }
 
-#sidebar img.sidebar-me {
+img.sidebar-me {
   border-radius: 50%;
   max-width: 60%;
   height: auto;
   box-shadow: 0 0 8px #6f7582;
 }
 
-h2.title {
+h2.sb-title {
   width: 100%;
+  font-weight: 400;
   text-align: center;
   line-height: 0.1em;
-  margin: 20px 0;
+  margin: 24px 0;
 }
 
-h2.title span:before,
-h2.title span:after {
+h2.sb-title span:before,
+h2.sb-title span:after {
   content: "\00a0\00a0\00a0\00a0";
   text-decoration: line-through;
   padding: 0 4px;
@@ -943,20 +956,23 @@ h2.title span:after {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
   overflow: visible;
-  justify-content: center;
-  align-content: center;
   height: 100%;
 }
 
 #resume .flexbox .column:nth-child(1) {
+  border: 1px solid white;
   width: 32.26%;
-  padding-left: 10px;
 }
 
 #resume .flexbox .column:nth-child(2) {
+  border: 1px solid #fff;
   width: 66.13%;
-  padding-left: 10px;
 }
 
 .timeline h1,
@@ -975,7 +991,7 @@ h2.title span:after {
 .timeline .left-part {
   width: 40%;
   display: table-cell;
-  padding-right: 25px;
+  padding-right: 20px;
   min-height: 100%;
   text-align: right;
   vertical-align: top;
@@ -984,9 +1000,7 @@ h2.title span:after {
 .timeline .right-part {
   width: 60%;
   display: table-cell;
-  padding-left: 25px;
-  padding-right: 15px;
-  /*ATTENTION*/
+  padding-left: 20px;
   text-align: left;
   vertical-align: top;
 }
@@ -998,8 +1012,7 @@ h2.title span:after {
 .timeline .divider {
   position: absolute;
   top: 0;
-  left: 41%;
-  /*ATTENTION*/
+  left: 40.63%;
   bottom: 0;
   width: 1px;
   background-color: #4a4d54;
@@ -1008,10 +1021,8 @@ h2.title span:after {
 .timeline .divider:after {
   content: '';
   display: block;
-  margin-top: 8px;
-  /*ATTENTION*/
+  margin-top: 6px;
   margin-left: -5px;
-  /*ATTENTION*/
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1027,7 +1038,7 @@ h2.title span:after {
 .timeline .item-period {
   margin: 0;
   font-size: 1.3em;
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 
 .timeline .item-company {
@@ -1057,7 +1068,6 @@ footer {
   padding: .5em 0;
   position: relative;
   text-align: right;
-  flex-shrink: 0;
 }
 
 footer::before {
@@ -1133,6 +1143,9 @@ footer .container {
     height: auto;
     width: 80%;
   }
+  a.sb-email {
+    font-size: 0.95em;
+  }
   #grid li {
     width: 32.26%;
   }
@@ -1153,6 +1166,9 @@ footer .container {
     height: auto;
     width: 60%;
   }
+  a.sb-email {
+    font-size: 0.75em;
+  }
   #grid li {
     width: 49.2%;
   }
@@ -1166,7 +1182,7 @@ footer .container {
     font-size: 0.75em;
   }
   .col {
-    margin: 0%;
+    margin: 0;
   }
   .span_1_of_3 {
     width: 100%;
@@ -1192,7 +1208,7 @@ footer .container {
     padding-top: 120px;
   }
   #slideshow img,
-  #sidebar img.sidebar-me {
+  img.sidebar-me {
     max-width: 30%;
     height: auto;
   }
@@ -1200,7 +1216,7 @@ footer .container {
   #resume .flexbox {
     position: relative;
     display: block;
-    padding: 0 2%;
+    padding: 0;
   }
   #slideshow .flexbox .column:nth-child(1),
   #slideshow .flexbox .column:nth-child(2),
@@ -1234,12 +1250,15 @@ footer .container {
   .timeline .divider {
     left: 0;
   }
+  a.sb-email {
+    font-size: 1em;
+  }
   [class^="tl"] {
     height: 16px;
     width: 16px;
   }
   #skills {
-    display: none;
+    display: block;
   }
   #grid li {
     width: 100%;
