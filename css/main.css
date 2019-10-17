@@ -507,6 +507,10 @@ blockquote:after {
   text-decoration: none;
 }
 
+.download i {
+  font-size: 16px;
+}
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -724,13 +728,6 @@ body {
 /* Slideshow
 -----------------------------------------------*/
 
-#slideshow {
-  overflow: visible;
-  text-align: center;
-  display: table;
-  width: 100%;
-}
-
 .mySlides {
   display: none;
 }
@@ -897,14 +894,7 @@ body {
 /* Resume
 -----------------------------------------------*/
 
-#resume {
-  display: table;
-  width: 100%;
-  overflow: visible;
-}
-
 #resume .container{
-  border: 1px solid black;
   padding: 0px 2%;
 }
 
@@ -966,12 +956,10 @@ h2.sb-title span:after {
 }
 
 #resume .flexbox .column:nth-child(1) {
-  border: 1px solid white;
   width: 32.26%;
 }
 
 #resume .flexbox .column:nth-child(2) {
-  border: 1px solid #fff;
   width: 66.13%;
 }
 
@@ -1057,7 +1045,9 @@ h2.sb-title span:after {
 /* Contact
 -----------------------------------------------*/
 
-#contact {}
+#contact .container {
+  padding: 0px 2% 20px;
+}
 
 
 /* Footer
@@ -1216,14 +1206,12 @@ footer .container {
   #resume .flexbox {
     position: relative;
     display: block;
-    padding: 0;
   }
   #slideshow .flexbox .column:nth-child(1),
   #slideshow .flexbox .column:nth-child(2),
   #resume .flexbox .column:nth-child(1),
   #resume .flexbox .column:nth-child(2) {
     width: 100%;
-    display: block;
   }
   #slideshow .flexbox {
     transform: rotate(180deg);
@@ -1241,9 +1229,7 @@ footer .container {
   .timeline .left-part,
   .timeline .right-part {
     width: 100%;
-    display: block;
-    padding: 0px 0px 0px 25px;
-    /*ATTENTION*/
+    padding-left: 12px;
     min-height: 100%;
     text-align: left;
   }
@@ -1258,7 +1244,7 @@ footer .container {
     width: 16px;
   }
   #skills {
-    display: block;
+    display: none;
   }
   #grid li {
     width: 100%;
