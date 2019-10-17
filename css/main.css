@@ -745,7 +745,6 @@ body {
   font-size: 1.3em;
   padding: 0;
   text-align: left;
-  text-justify: inter-word;
 }
 
 #slideshow img {
@@ -909,7 +908,6 @@ body {
 #resume p {
   font-size: 1.3em;
   margin: 8px 0;
-  padding-bottom: 4px;
 }
 
 #sidebar {
@@ -977,10 +975,6 @@ h2.title span:after {
   padding-bottom: 20px;
 }
 
-.timeline .timeline-item:last-child {
-  padding-bottom: 20px;
-}
-
 .timeline .left-part {
   width: 40%;
   display: table-cell;
@@ -994,25 +988,19 @@ h2.title span:after {
   width: 60%;
   display: table-cell;
   padding-left: 25px;
-  vertical-align: top;
+  padding-right: 15px;   /*ATTENTION*/
   text-align: left;
+  vertical-align: top;
 }
 
-.timeline .right-part p,
-.timeline .right-part p>* {
-  margin: 8px 0;
-  padding-bottom: 4px;
-}
-
-.timeline .right-part i,
-.timeline .right-part i>* {
+.timeline .right-part i {
   font-size: 1.1em;
 }
 
 .timeline .divider {
   position: absolute;
   top: 0;
-  left: 41%;
+  left: 41%;    /*ATTENTION*/
   bottom: 0;
   width: 1px;
   background-color: #4a4d54;
@@ -1021,8 +1009,8 @@ h2.title span:after {
 .timeline .divider:after {
   content: '';
   display: block;
-  margin-top: 8px;
-  margin-left: -5px;
+  margin-top: 8px;   /*ATTENTION*/
+  margin-left: -5px;  /*ATTENTION*/
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1237,12 +1225,9 @@ footer .container {
   .timeline .right-part {
     width: 100%;
     display: block;
-    padding: 3px 12px;
+    padding: 0px 0px 0px 25px;  /*ATTENTION*/
+    min-height: 100%;
     text-align: left;
-  }
-  .timeline .right-part p,
-  .timeline .right-part p>* {
-    padding-right: 2%;
   }
   .timeline .divider {
     left: 0;
