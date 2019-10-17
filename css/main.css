@@ -491,6 +491,41 @@ blockquote:after {
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
+   
+.butn {
+  background: #dabd9f;
+  background-image: -webkit-linear-gradient(top, #dabd9f, #ba9d80);
+  background-image: -moz-linear-gradient(top, #dabd9f, #ba9d80);
+  background-image: -ms-linear-gradient(top, #dabd9f, #ba9d80);
+  background-image: -o-linear-gradient(top, #dabd9f, #ba9d80);
+  background-image: linear-gradient(to bottom, #dabd9f, #ba9d80);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 1px 1px #4a4d54;
+  -moz-box-shadow: 0px 1px 1px #4a4d54;
+  box-shadow: 0px 1px 1px #4a4d54;
+  padding: 10px 12px;
+  text-decoration: none;
+  cursor: pointer;
+  display:block;
+  color: #34373d;
+  font-size: 1.1em;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+.butn:hover {
+  text-decoration: none;
+  color: #e0eaf2;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -700,7 +735,6 @@ body {
   text-align: center;
   display: table;
   width: 100%;
-  min-height: 400px;
 }
 
 .mySlides {
@@ -733,7 +767,7 @@ body {
   display: flex;
   overflow: visible;
   justify-content: center;
-  padding: 2%;
+  padding: 5% 2%;
 }
 
 #slideshow .flexbox .column:nth-child(1) {
