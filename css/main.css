@@ -144,7 +144,7 @@ blockquote:before {
   background: #34373d;
   width: 3rem;
   height: 2rem;
-  font: 6em/1.08em 'Quicksand', sans-serif;
+  font: 6em/1.08em 'PT Sans', sans-serif;
   color: #757575;
   text-align: center;
 }
@@ -184,6 +184,311 @@ blockquote:after {
 
 
 /* ==========================================================================
+   Icons
+   ========================================================================== */
+
+[class^="tl"] {
+  display: none;
+  /* Remove to show icons */
+  float: left;
+  position: relative;
+  padding-right: 6px;
+  height: 22px;
+  width: 22px;
+}
+
+.tl-about {
+  top: 7px;
+}
+
+.tl-education {
+  top: 10px;
+}
+
+.tl-experience {
+  top: 7px;
+}
+
+.tl-volunteer {
+  top: 8px;
+}
+
+.tl-projects {
+  top: 8px;
+}
+
+.tl-achievements {
+  top: 7px;
+}
+
+
+/* ==========================================================================
+   Skills Dots
+   ========================================================================== */
+
+#skills {
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  line-height: 2em;
+  padding: 20px 0 0;
+}
+
+#skills li {
+  margin: 25px auto;
+  background: #34373d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2e33), to(#34373d));
+  background-image: -webkit-linear-gradient(top, #2b2e33, #34373d);
+  background-image: -moz-linear-gradient(top, #2b2e33, #34373d);
+  background-image: -ms-linear-gradient(top, #2b2e33, #34373d);
+  background-image: -o-linear-gradient(top, #2b2e33, #34373d);
+  background-image: linear-gradient(top, #2b2e33, #34373d);
+  height: 6px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 1px 0px #000 inset, 0 1px 0 #4a4d54;
+  -webkit-box-shadow: 0 1px 0px #000 inset, 0 1px 0 #4a4d54;
+  box-shadow: 0 1px 0px #000 inset, 0 1px 0 #4a4d54;
+}
+
+#skills li p {
+  position: relative;
+  top: -20px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.0em;
+}
+
+.bar {
+  height: 4px;
+  margin: 1px 2px;
+  position: absolute;
+  border-radius: 10px;
+  -moz-box-shadow: 0 1px 0px #4a4d54 inset, 0 1px 0 #000;
+  -webkit-box-shadow: 0 1px 0px #4a4d54 inset, 0 1px 0 #000;
+  box-shadow: 0 1px 0px #4a4d54 inset, 0 1px 0 #000;
+  left: 0;
+}
+
+.ps {
+  width: 80%;
+  -moz-animation: ps 2s ease-out;
+  -webkit-animation: ps 2s ease-out;
+  background-color: #dabd9f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dabd9f), to(#c9ae91));
+  background-image: -webkit-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -moz-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -ms-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -o-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: linear-gradient(top, #dabd9f, #c9ae91);
+}
+
+.il {
+  width: 40%;
+  -moz-animation: il 2s ease-out;
+  -webkit-animation: il 2s ease-out;
+  background-color: #dabd9f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dabd9f), to(#c9ae91));
+  background-image: -webkit-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -moz-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -ms-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -o-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: linear-gradient(top, #dabd9f, #c9ae91);
+}
+
+.ds {
+  width: 60%;
+  -moz-animation: ds 2s ease-out;
+  -webkit-animation: ds 2s ease-out;
+  background-color: #dabd9f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dabd9f), to(#c9ae91));
+  background-image: -webkit-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -moz-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -ms-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -o-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: linear-gradient(top, #dabd9f, #c9ae91);
+}
+
+.ue {
+  width: 40%;
+  -moz-animation: ue 2s ease-out;
+  -webkit-animation: ue 2s ease-out;
+  background-color: #dabd9f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dabd9f), to(#c9ae91));
+  background-image: -webkit-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -moz-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -ms-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -o-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: linear-gradient(top, #dabd9f, #c9ae91)
+}
+
+.pp {
+  width: 60%;
+  -moz-animation: pp 2s ease-out;
+  -webkit-animation: pp 2s ease-out;
+  background-color: #dabd9f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dabd9f), to(#c9ae91));
+  background-image: -webkit-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -moz-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -ms-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -o-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: linear-gradient(top, #dabd9f, #c9ae91)
+}
+
+.ae {
+  width: 20%;
+  -moz-animation: ae 2s ease-out;
+  -webkit-animation: ae 2s ease-out;
+  background-color: #dabd9f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dabd9f), to(#c9ae91));
+  background-image: -webkit-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -moz-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -ms-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -o-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: linear-gradient(top, #dabd9f, #c9ae91)
+}
+
+.sp {
+  width: 20%;
+  -moz-animation: sp 2s ease-out;
+  -webkit-animation: sp 2s ease-out;
+  background-color: #dabd9f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dabd9f), to(#c9ae91));
+  background-image: -webkit-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -moz-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -ms-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: -o-linear-gradient(top, #dabd9f, #c9ae91);
+  background-image: linear-gradient(top, #dabd9f, #c9ae91)
+}
+
+@-moz-keyframes ps {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-moz-keyframes il {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@-moz-keyframes ds {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-moz-keyframes ue {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@-moz-keyframes pp {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-moz-keyframes ae {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@-moz-keyframes sp {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes ps {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes il {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@-webkit-keyframes ds {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes ue {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@-webkit-keyframes pp {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes ae {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes sp {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+
+/* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
 
@@ -211,6 +516,7 @@ body {
   padding: 0;
   clear: both;
   overflow: hidden;
+  height: 100%;
 }
 
 .content {
@@ -418,7 +724,7 @@ body {
   border-radius: 50%;
   max-width: 80%;
   height: auto;
-  box-shadow: 0 0 20px #4a4d54;
+  box-shadow: 0 0 8px #6f7582;
 }
 
 #slideshow .flexbox {
@@ -427,7 +733,6 @@ body {
   display: flex;
   overflow: visible;
   justify-content: center;
-  flex: 1 1 auto;
   padding: 2%;
 }
 
@@ -491,7 +796,7 @@ body {
 
 .grid-cell {
   margin: 12px;
-  box-shadow: 0 0 6px #4a4d54;
+  box-shadow: 0 0 4px #4a4d54;
   display: block;
   position: relative;
   overflow: hidden;
@@ -564,40 +869,52 @@ body {
 #resume {
   display: table;
   width: 100%;
-}
-
-[class^="icon"] {
-  display: none;  /* Remove to show resume icons */
-  float: left;
-  position: relative;
-  top: 10px;
-  padding-right: 6px;
-  height: 22px;
-  width: 22px;
-}
-
-.icon-experience {
-  top: 7px;
-}
-
-.icon-volunteer {
-  top: 8px;
-}
-
-.icon-projects {
-  top: 8px;
-}
-
-.icon-achievements {
-  top: 7px;
+  overflow: visible;
 }
 
 #resume h1 {
   font-weight: 400;
   font-size: 2.125em;
   margin: 0.5em auto;
-  text-align: left;
   text-decoration: underline #dabd9f;
+}
+
+#resume p {
+  font-size: 1.3em;
+  margin: 8px 0;
+  padding-bottom: 4px;
+}
+
+#sidebar {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 20px 0;
+  border-right: 1px solid #4a4d54;
+  text-align: center;
+  overflow: hidden;
+}
+
+#sidebar img.sidebar-me {
+  border-radius: 50%;
+  max-width: 60%;
+  height: auto;
+  box-shadow: 0 0 8px #6f7582;
+}
+
+h2.title {
+  width: 100%;
+  text-align: center;
+  line-height: 0.1em;
+  margin: 20px 0;
+}
+
+h2.title span:before,
+h2.title span:after {
+  content: "\00a0\00a0\00a0\00a0";
+  text-decoration: line-through;
+  padding: 0 4px;
 }
 
 #resume .flexbox {
@@ -606,16 +923,23 @@ body {
   display: flex;
   overflow: visible;
   justify-content: center;
-  align-items: center;
-  flex: 1 1 auto;
+  align-content: center;
+  height: 100%;
 }
 
 #resume .flexbox .column:nth-child(1) {
   width: 32.26%;
+  padding-left: 10px;
 }
 
 #resume .flexbox .column:nth-child(2) {
   width: 66.13%;
+  padding-left: 10px;
+}
+
+.timeline h1,
+.timeline p {
+  text-align: left;
 }
 
 .timeline .timeline-item {
@@ -649,7 +973,6 @@ body {
 
 .timeline .right-part p,
 .timeline .right-part p>* {
-  font-size: 1.3em;
   margin: 8px 0;
   padding-bottom: 4px;
 }
@@ -852,7 +1175,8 @@ footer .container {
   #contact {
     padding-top: 120px;
   }
-  #slideshow img {
+  #slideshow img,
+  #sidebar img.sidebar-me {
     max-width: 30%;
     height: auto;
   }
@@ -860,7 +1184,7 @@ footer .container {
   #resume .flexbox {
     position: relative;
     display: block;
-    padding: 2%;
+    padding: 0 2%;
   }
   #slideshow .flexbox .column:nth-child(1),
   #slideshow .flexbox .column:nth-child(2),
@@ -893,7 +1217,8 @@ footer .container {
   .timeline .divider {
     left: 0;
   }
-  [class^="icon"] {
+  [class^="tl"],
+  [class^="sb"] {
     height: 16px;
     width: 16px;
   }
@@ -960,3 +1285,4 @@ footer .container {
     page-break-after: avoid;
   }
 }
+
