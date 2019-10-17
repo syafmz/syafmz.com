@@ -36,6 +36,7 @@ body {
   background: #34373d url('../img/bg.png');
   font-family: 'Quicksand', sans-serif;
   text-align: center;
+  text-justify: inter-word;
   font-size: 0.875em;
   line-height: 1.4;
   height: 100%;
@@ -489,37 +490,26 @@ blockquote:after {
 
 
 /* ==========================================================================
-   Browser Upgrade Prompt
+   Button
    ========================================================================== */
    
-.butn {
-  background: #dabd9f;
-  background-image: -webkit-linear-gradient(top, #dabd9f, #ba9d80);
-  background-image: -moz-linear-gradient(top, #dabd9f, #ba9d80);
-  background-image: -ms-linear-gradient(top, #dabd9f, #ba9d80);
-  background-image: -o-linear-gradient(top, #dabd9f, #ba9d80);
-  background-image: linear-gradient(to bottom, #dabd9f, #ba9d80);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  -webkit-box-shadow: 0px 1px 1px #4a4d54;
-  -moz-box-shadow: 0px 1px 1px #4a4d54;
-  box-shadow: 0px 1px 1px #4a4d54;
-  padding: 10px 12px;
+.download {
+  color: #dabd9f !important;
+  text-transform: uppercase;
   text-decoration: none;
-  cursor: pointer;
-  display:block;
-  color: #34373d;
-  font-size: 1.1em;
-  opacity: 1.0;
-  filter: alpha(opacity=100);
+  background: #34373d;
+  padding: 8px 12px;
+  border: 4px solid #dabd9f !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
 }
 
-.butn:hover {
+.download:hover {
+  color: #34373d !important;
+  background: #dabd9f;
+  border-color: #dabd9f !important;
+  transition: all 0.4s ease 0s;
   text-decoration: none;
-  color: #e0eaf2;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
 }
 
 
@@ -767,7 +757,7 @@ body {
   display: flex;
   overflow: visible;
   justify-content: center;
-  padding: 5% 2%;
+  border: 1px solid black;
 }
 
 #slideshow .flexbox .column:nth-child(1) {
