@@ -1226,6 +1226,9 @@ footer .container {
   #slideshow .flexbox>.column {
     transform: rotate(-180deg);
   }
+  #sidebar {
+    border-right-style: none;
+  }
   .timeline .timeline-item {
     position: relative;
     display: block;
@@ -1244,10 +1247,12 @@ footer .container {
   .timeline .divider {
     left: 0;
   }
-  [class^="tl"],
-  [class^="sb"] {
+  [class^="tl"] {
     height: 16px;
     width: 16px;
+  }
+  #skills {
+    display: none;
   }
   #grid li {
     width: 100%;
