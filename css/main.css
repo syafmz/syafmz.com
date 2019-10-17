@@ -696,6 +696,10 @@ body {
 /* About
 -----------------------------------------------*/
 
+#about .container {
+  padding-bottom: 10px;
+}
+
 #about h1 {
   font-weight: 400;
   font-size: 2.5em;
@@ -757,7 +761,6 @@ body {
   display: flex;
   overflow: visible;
   justify-content: center;
-  border: 1px solid black;
 }
 
 #slideshow .flexbox .column:nth-child(1) {
