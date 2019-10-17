@@ -701,8 +701,7 @@ body {
 -----------------------------------------------*/
 
 #about .container {
-  padding: 0 2%;
-  margin-bottom: 20px;
+  padding: 0 2% 20px;
 }
 
 #about h1 {
@@ -1047,8 +1046,7 @@ h2.sb-title span:after {
 -----------------------------------------------*/
 
 #contact .container {
-  padding: 0 2%;
-  margin-bottom: 20px;
+  padding: 0 2% 20px;
   background: url("../img/castle.png") no-repeat center;
   background-size: cover;
 }
