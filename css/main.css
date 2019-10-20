@@ -158,15 +158,15 @@ blockquote:after {
    ========================================================================== */
 
 .preloader {
-  position: fixed;
-  left: 50%;
-  top: 50%;
+  position: absolute;
+  left: 48%;
+  top: 48%;
   border: 8px solid #4a4d54;
   border-radius: 50%;
   border-top: 8px solid #dabd9f;
   width: 32px;
   height: 32px;
-  z-index: 9999;
+  z-index: 999999;
   -webkit-animation: spin 1.5s linear infinite; /* Safari */
   animation: spin 1.5s linear infinite;
 }
