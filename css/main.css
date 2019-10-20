@@ -1199,7 +1199,7 @@ footer {
   border-top: 1px solid #4a4d54;
   padding: .5em 0;
   position: relative;
-  text-align: right;
+  text-align: center;
 }
 
 footer::before {
