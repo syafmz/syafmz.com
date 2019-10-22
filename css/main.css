@@ -1139,8 +1139,6 @@ footer {
   padding: .5em 0;
   position: relative;
   text-align: center;
-  -webkit-flex-shrink: 1; 
-  flex-shrink: 1;
 }
 
 footer::before {
