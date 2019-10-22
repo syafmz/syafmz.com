@@ -159,8 +159,8 @@ blockquote:after {
 
 .preloader {
   position: absolute;
-  left: 48%;
-  top: 48%;
+  top: 49%;
+  left: 49%;
   border: 8px solid #4a4d54;
   border-radius: 50%;
   border-top: 8px solid #dabd9f;
@@ -357,69 +357,6 @@ blockquote:after {
   background-image: -ms-linear-gradient(top, #dabd9f, #c9ae91);
   background-image: -o-linear-gradient(top, #dabd9f, #c9ae91);
   background-image: linear-gradient(top, #dabd9f, #c9ae91)
-}
-
-@-moz-keyframes ps {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-@-moz-keyframes il {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 40%;
-  }
-}
-
-@-moz-keyframes ds {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 60%;
-  }
-}
-
-@-moz-keyframes ue {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 40%;
-  }
-}
-
-@-moz-keyframes pp {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 60%;
-  }
-}
-
-@-moz-keyframes ae {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 20%;
-  }
-}
-
-@-moz-keyframes sp {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 20%;
-  }
 }
 
 @-webkit-keyframes ps {
@@ -736,6 +673,7 @@ body {
   font-weight: 400;
   font-size: 2.5em;
   text-align: left;
+  text-decoration: underline #dabd9f;
 }
 
 #slideshow p {
@@ -1045,7 +983,8 @@ h2.sb-title {
   font-weight: 400;
   text-align: center;
   line-height: 0.1em;
-  margin: 24px 0;
+  margin: 8px 0 16px;
+  font-size: 1.3em;
 }
 
 h2.sb-title span:before,
@@ -1200,6 +1139,8 @@ footer {
   padding: .5em 0;
   position: relative;
   text-align: center;
+  -webkit-flex-shrink: 1; 
+  flex-shrink: 1;
 }
 
 footer::before {
@@ -1436,4 +1377,3 @@ footer .container {
     page-break-after: avoid;
   }
 }
-
