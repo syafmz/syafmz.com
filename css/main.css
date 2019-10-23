@@ -687,6 +687,7 @@ body {
   max-width: 80%;
   height: auto;
   box-shadow: 0 0 8px #6f7582;
+  margin-top: 50px;
 }
 
 #slideshow .flexbox {

@@ -119,15 +119,35 @@ body {
   font-size: 0.875em;
 }
 
+#header {
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: #34373d url('https://syafmz.com/img/bg.png');
+}
+
+#title {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  margin: 0;
+  padding: 4px 0px;
+}
+
 
 /* Error
 -----------------------------------------------*/
 
 #error img {
-  border-radius: 8%;
+  border-radius: 16%;
   max-width: 180px;
   height: auto;
-  box-shadow: 0 0 8px #6f7582;
 }
 
 #error h1 {
