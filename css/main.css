@@ -1267,6 +1267,9 @@ footer .container {
   #contact {
     padding-top: 120px;
   }
+  #slideshow img {
+    margin-top: 0;
+  }
   #slideshow img,
   img.sidebar-me {
     max-width: 30%;
