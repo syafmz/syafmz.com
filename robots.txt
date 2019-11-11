@@ -1,10 +1,4 @@
 # www.robotstxt.org/
 
 User-agent: *
-Disallow: /
-
-User-agent: Googlebot-Image
-Disallow: /
-
-User-agent: Googlebot
 Disallow:
