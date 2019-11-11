@@ -196,10 +196,6 @@ blockquote:after {
   width: 22px;
 }
 
-.tl-about {
-  top: 7px;
-}
-
 .tl-education {
   top: 10px;
 }
@@ -491,13 +487,13 @@ body {
 
 #about,
 #contact {
-  padding-top: 100px;
+  padding-top: 150px;
   display: none;
 }
 
 #portfolio,
 #resume {
-  padding-top: 50px;
+  padding-top: 46px;
   display: none;
 }
 
