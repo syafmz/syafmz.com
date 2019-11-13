@@ -26,7 +26,7 @@
 ============================================================================= */
 /* Font Awesome icons font */
 @import url('../fonts/fontawesome-free/css/all.min.css'); /* Full icons list: https://fontawesome.com/icons?d=gallery&m=free */
-@import url('all.min.css');
+@import url('fontawesome.min.css');
 
 /* Linearicons Font */
 @import url('Linearicons-Free.css'); /* Full icons list: https://linearicons.com/free */
