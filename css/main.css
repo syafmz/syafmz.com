@@ -2143,7 +2143,7 @@ h2.sb-title {
   width: 12px;
   height: 12px;
   margin: 5px;
-  background: #e0eaf2;
+  background: #000;
   border: 1px solid #9e9e9e;
   display: block;
   -webkit-backface-visibility: visible;
