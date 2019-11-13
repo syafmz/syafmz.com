@@ -2062,7 +2062,6 @@ h2.sb-title {
   width: 100%;
   margin-top: -20px;
   text-align: center;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .portfolio-page-carousel .owl-nav [class*='owl-'] {
@@ -2128,7 +2127,6 @@ h2.sb-title {
   right: 0;
   margin: 0 10px 5px;
   text-align: center;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .portfolio-page-carousel .owl-dots .owl-dot {
