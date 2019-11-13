@@ -2281,7 +2281,7 @@ h2.sb-title {
   padding: 0;
   width: 28px;
   height: 28px;
-  color: #222 !important;
+  color: #222;
   background-color: #dabd9f;
   border: 1px solid transparent;
   text-align: center;
@@ -2293,7 +2293,7 @@ h2.sb-title {
 }
 
 .share-buttons a:hover {
-  color: #dabd9f !important;
+  color: #dabd9f;
   background-color: #222;
   border-color: #dabd9f;
 }
@@ -2306,7 +2306,11 @@ h2.sb-title {
 .share-buttons a i {
   font-size: 0.875em;
   line-height: 26px;
-  color: #e0eaf2;
+  color: #222;
+}
+
+.share-buttons a:hover i {
+  color: #dabd9f;
 }
 
 /* Tags Block */
