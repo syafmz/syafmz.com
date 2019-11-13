@@ -2293,9 +2293,9 @@ h2.sb-title {
 }
 
 .share-buttons a:hover {
-  color: #34373d;
+  color: #dabd9f;
   background-color: #222;
-  border-color: #222;
+  border-color: #dabd9f;
 }
 
 .share-buttons a:last-child {
