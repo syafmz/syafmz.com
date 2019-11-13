@@ -2136,15 +2136,15 @@ h2.sb-title {
 }
 
 .portfolio-page-carousel .owl-dots .owl-dot.active span, .portfolio-page-carousel .owl-dots .owl-dot:hover span {
-  background: #9e9e9e;
+  background: #dabd9f;
 }
 
 .portfolio-page-carousel .owl-dots .owl-dot span {
   width: 12px;
   height: 12px;
   margin: 5px;
-  background: #000;
-  border: 1px solid #9e9e9e;
+  background: #222;
+  border: 1px solid #dabd9f;
   display: block;
   -webkit-backface-visibility: visible;
   transition: opacity 200ms ease;
