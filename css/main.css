@@ -2281,7 +2281,7 @@ h2.sb-title {
   padding: 0;
   width: 28px;
   height: 28px;
-  color: #34373d;
+  color: #222;
   background-color: #dabd9f;
   border: 1px solid transparent;
   text-align: center;
@@ -2293,9 +2293,9 @@ h2.sb-title {
 }
 
 .share-buttons a:hover {
-  color: #dabd9f;
-  background-color: #34373d;
-  border-color: #34373d;
+  color: #34373d;
+  background-color: #222;
+  border-color: #222;
 }
 
 .share-buttons a:last-child {
