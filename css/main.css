@@ -2239,6 +2239,12 @@ h2.sb-title {
   margin-bottom: 20px;
 }
 
+.portfolio-page-video p,
+.portfolio-page-carousel p,
+.portfolio-page-image p {
+  text-align: center;
+}
+
 .project-description {
   display: block;
   position: relative;
