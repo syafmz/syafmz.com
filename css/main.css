@@ -2158,7 +2158,7 @@ h2.sb-title {
 ============================================================================= */
 .page-ajax-loaded {
   position: fixed;
-  background-color: #fff;
+  background: #34373d url('../img/bg.png');
   padding: 0;
   top: 0;
   bottom: 0;
@@ -2200,12 +2200,13 @@ h2.sb-title {
   width: 40px;
   text-align: center;
   color: #aaa;
-  background-color: #333;
+  background-color: #222;
 }
 
 .ajax-page-nav > div.nav-item a:hover {
   background-color: #dabd9f;
   color: #fff;
+  text-decoration: none;
 }
 
 .ajax-page-nav > div.nav-item a i {
@@ -2244,7 +2245,7 @@ h2.sb-title {
   display: block;
   position: relative;
   padding: 20px 25px 25px;
-  background-color: #333;
+  background-color: #222;
 }
 
 .ajax-page-wrapper .block-title h3 {
