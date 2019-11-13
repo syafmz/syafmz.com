@@ -2281,7 +2281,7 @@ h2.sb-title {
   padding: 0;
   width: 28px;
   height: 28px;
-  color: #222;
+  color: #222 !important;
   background-color: #dabd9f;
   border: 1px solid transparent;
   text-align: center;
