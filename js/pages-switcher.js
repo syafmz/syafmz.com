@@ -72,7 +72,7 @@ var PageTransitions = (function ($, options) {
 
         Animate(menuLink);
 
-        $('body').append('<div id="page-ajax-loaded" class="page-ajax-loaded animated rotateInDownRight"></div>');
+        $('body').append('<div id="page-ajax-loaded" class="page-ajax-loaded animated slideInRight"></div>');
         ajaxLoader();
 
         $(".lmpixels-arrow-right").click(function() {
@@ -121,13 +121,13 @@ var PageTransitions = (function ($, options) {
         var ajaxLoadedContent = $('#page-ajax-loaded');
 
         function showContent() {
-            ajaxLoadedContent.removeClass('rotateOutDownRight closed');
+            ajaxLoadedContent.removeClass('slideOutLeft closed');
             ajaxLoadedContent.show();
             $('body').addClass('ajax-page-visible');
         }
 
         function hideContent() {
-            $('#page-ajax-loaded').addClass('rotateOutDownRight closed');
+            $('#page-ajax-loaded').addClass('slideOutLeft closed');
             $('body').removeClass('ajax-page-visible');
             setTimeout(function(){
                 $('#page-ajax-loaded.closed').html('');
