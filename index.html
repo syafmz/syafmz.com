@@ -1,701 +1,893 @@
-<!--
-  * Developed by Alfi Lee for https://syafmz.com
-  * Email	: akulahalfi@aol.com
-  * Version	: 1.0
-  * Created on	: 2019.10.01
-  * Updated on    : 2019.10.01
-  * Description	: index.html
-  -->
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Syafiqah Zailani - 2D Generalist based in Singapore</title>
     <meta name="author" content="Syafiqah Zailani" />
     <meta name="revised" content="2019/10/01" />
     <meta name="description" content="Syafmz is a web resume of 2D Generalist, Syafiqah Zailani, based in Singapore who brings years of experience in UI/UX with interactive and visual design.">
     <meta name="keywords" content="syafmz, syxfmz, syafiqah, zailani, gg, com, ui, ux, designer, 2d, generalist, educator, singapore, republic, polytechnic, digipen, institute, technology, resume" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <meta name="theme-color" content="#34373d">
   </head>
   <body>
-    <!-- Preloader -->
+    <!-- Loading animation -->
     <div class="preloader">
       <div class="preloader-animation">
         <div class="preloader-spinner">
         </div>
       </div>
     </div>
-    <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
-    <!-- Add your site or application content here -->
-    <div id="header">
-      <div class="container">
-        <div class="section group">
-          <div class="col span_1_of_3">
-            <div id="menu">
-              <ul>
-                <li><a href="#about" class="btn" onclick="openContent('about', 0)" title="About">About</a></li>
-                <li><a href="#portfolio" class="btn" onclick="openContent('portfolio', 1)" title="Portfolio">Portfolio</a></li>
-                <li><a href="#resume" class="btn" onclick="openContent('resume', 2)" title="&#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;">&#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;</a></li>
-                <li><a href="#contact" class="btn" onclick="openContent('contact', 3)" title="Contact">Contact</a></li>
-              </ul>
-            </div>
-            <!-- /menu -->
+    <!-- /Loading animation -->
+    <div id="page" class="page">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="header-content clearfix">
+          <div class="my-photo">
+            <a href="" title="Syafmz"><img src="img/title.png" alt="Syafiqah Zailani"/></a>
           </div>
-          <!-- .col -->
-          <div class="col span_1_of_3">
-            <div id="title">
-              <a href="" title="Syafmz"><img src="img/title.png" alt="Syafiqah Zailani"/></a>
-            </div>
-            <!-- /title -->
+          <!-- Navigation -->
+          <div class="site-nav">
+            <!-- Main menu -->
+            <ul id="nav" class="site-main-menu">
+              <li>
+                <a class="pt-trigger" href="#about" data-animation="27" title="About">About</a><!-- href value = data-id without # of .pt-page. -->
+              </li>
+              <li>
+                <a class="pt-trigger" href="#portfolio" data-animation="27" title="Portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#resume" data-animation="27" title="&#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;">&#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#contact" data-animation="27" title="Contact">Contact</a>
+              </li>
+            </ul>
+            <!-- /Main menu -->
           </div>
-          <!-- .col -->
-          <div class="col span_1_of_3">
-            <div id="socials">
-              <ul>
-                <li><a href="https://syafmz.artstation.com/" target="_blank" title="Checkout my artwork!"><img src="img/icons/as.png" alt="Artstation"/></a></li>
-                <li><a href="https://www.instagram.com/syxfmz/" target="_blank" title="Follow Me!"><img src="img/icons/ig.png" alt="Instagram"/></a></li>
-                <li><a href="https://www.linkedin.com/in/syafmz" target="_blank" title="Let's get professional!"><img src="img/icons/li.png" alt="LinkedIn"/></a></li>
-                <li><a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x79;&#x61;&#x66;&#x69;&#x71;&#x61;&#x68;&#x7a;&#x61;&#x69;&#x6c;&#x61;&#x6e;&#x69;&#x32;&#x36;&#x39;&#x34;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" title="Get in touch!"><img src="img/icons/gm.png" alt="Gmail"/></a></li>
-              </ul>
-            </div>
-            <!-- /socials --> 
+          <!-- Navigation -->
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://www.artstation.com/syafmz" target="_blank" title="Checkout my artwork!"><i class="fab fa-artstation"></i></a>
+            <a href="https://www.instagram.com/syxfmz/" target="_blank" title="Follow Me!"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/syafmz/" target="_blank" title="Let's get professional!"><i class="fab fa-linkedin"></i></a>
+            <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x79;&#x61;&#x66;&#x69;&#x71;&#x61;&#x68;&#x7a;&#x61;&#x69;&#x6c;&#x61;&#x6e;&#x69;&#x32;&#x36;&#x39;&#x34;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" title="Get in touch!"><i class="far fa-envelope"></i></a>
           </div>
-          <!-- .col -->
+          <!-- / Social Links -->
+          <!-- Copyrights -->
+          <div class="copyrights">
+            Copyright &copy; <script src="js/copyright.js"></script>, All Rights Reserved<br> • <a href="" title="Syafmz">syafmz.com</a>  • 
+          </div>
+          <!-- / Copyrights -->
         </div>
-        <!-- .section -->
-      </div>
-      <!-- .container -->
-    </div>
-    <!-- /header -->
-    <div id="about" class="content fadeIn">
-      <div class="container">
-        <h1>Hello, I am <label onclick="currentSlide(1)">Syafiqah</label></h1>
-        <h1><label onclick="currentSlide(2)">2D Generalist</label></h1>
-        <h1><label onclick="currentSlide(3)">Educator,</label> <label onclick="currentSlide(4)">Gamer,</label> and <label onclick="currentSlide(5)">Cat-Lover</label></h1>
-        <div id="slideshow">
-          <div class="slideshow-inner">
-            <div class="mySlides">
-              <div class="flexbox">
-                <div class="column">
-                  <h2>Who am I?</h2>
-                  <p>
-                    <strong>
-                      My name is Nurul Syafiqah Bte Mohamad Zailani. I am a <script src="js/age.js"></script> year old 2D Generalist based in Singapore.
-                    </strong>
-                  </p>
-                  <p>
-                    I am currently a final year undergrad of DigiPen Institute of Technology Singapore majoring in Digital Art and Animation.
-                  </p>
-                  <p>
-                    My field of work is in digital arts. I do mostly illustration for print media and develop user ideas on screen employing interactive and visual design. To me, user experience is everything!
-                  </p>
-                </div>
-                <!-- .column -->
-                <div class="column">
-                  <img src="img/about/me.jpg" alt="about-me"/>
-                </div>
-                <!-- .column -->      
-              </div>
-              <!-- .flexbox -->
-            </div>
-            <!-- .mySlides --> 
-            <div class="mySlides">
-              <div class="flexbox">
-                <div class="column">
-                  <h2>2D Generalist</h2>
-                  <p>
-                    The nature of my studies has taught me a vast variety of 2D skills. This includes UI/UX design, graphic design, storyboarding, animatics, concept art, asset creation, illustration and matte painting. 
-                  </p>
-                  <p>I leverage upon these unique skill set to value add and contribute to business objectives. To continue growing as an artist, I am self-motivated to keep learning and jump on opportunities that will allow me to do so.
-                  </p>
-                </div>
-                <!-- .column -->
-                <div class="column">
-                  <img src="img/about/generalist.jpg" alt="about-generalist"/>
-                </div>
-                <!-- .column -->
-              </div>
-              <!-- .flexbox -->
-            </div>
-            <!-- .mySlides -->
-            <div class="mySlides">
-              <div class="flexbox">
-                <div class="column">
-                  <h2>Educator</h2>
-                  <p>
-                    Apart from being a full-time undergrad, I spend a good deal of time working as a freelance art teacher in Artary. I teach students how to paint, draw, and create art using various mediums.
-                  </p>
-                  <p>
-                    I believe in the phrase,
-                  </p>
-                  <blockquote cite="https://www.goodreads.com/quotes/32942-in-learning-you-will-teach-and-in-teaching-you-will">
-                    In learning you will teach, and in teaching you will learn.
-                  </blockquote>
-                  <p>
-                    Balancing both creating and teaching art have been a source of absolute joy for me. Not only am I able to hone my craft as an artist, but I see every child as an opportunity to influence art in society.
-                  </p>
-                </div>
-                <!-- .column -->
-                <div class="column">
-                  <img src="img/about/educator.jpg" alt="about-educator"/>
-                </div>
-                <!-- .column -->
-              </div>
-              <!-- .flexbox -->
-            </div>
-            <!-- .mySlides -->
-            <div class="mySlides">
-              <div class="flexbox">
-                <div class="column">
-                  <h2>Gamer</h2>
-                  <p>
-                    When I am not working, I enjoy gaming with my friends and have recently built myself a custom gaming PC to play some of the newest releases. 
-                  </p>
-                  <p>
-                    Some titles I spent countless hours on are Defense of the Ancients (DotA), Dota Underlords, Don't Starve Together, Overcooked! and many more.
-                  </p>
-                </div>
-                <!-- .column -->
-                <div class="column">
-                  <img src="img/about/gamer.jpg" alt="about-gamer"/>
-                </div>
-                <!-- .column -->
-              </div>
-              <!-- .flexbox -->
-            </div>
-            <!-- .mySlides -->
-            <div class="mySlides">
-              <div class="flexbox">
-                <div class="column">
-                  <h2>Cat-Lover</h2>
-                  <p>
-                    If you are also a cat lover, then we are already friends!
-                  </p>
-                  <p>
-                    My love for fluffy feline stretch back to my early childhood when I rescued a cat trapped in a fire hose reel cabinet. Since then, I took it upon myself to care for them and have personally rescued several more lost and distressed cats.
-                  </p>
-                  <p>
-                    Being around them calms me and I instantly feel at peace even in the worst days. Their curiosity, playfulness, and independence, pretty much shaped me into the person I am today.
-                  </p>
-                </div>
-                <!-- .column -->
-                <div class="column">
-                  <img src="img/about/catlover.jpg" alt="about-catlover"/>
-                </div>
-                <!-- .column -->
-              </div>
-              <!-- .flexbox -->
-            </div>
-            <!-- .mySlides -->
+      </header>
+      <!-- /Header -->
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-header-image">
+            <a href="#">
+            <img src="img/avatar.jpg" alt="image">
+            </a>
           </div>
-          <!-- .slideshow-inner -->
+          <div class="mobile-site-title"><a href="#">Syafiqah Zailani</a></div>
         </div>
-        <!-- /slideshow -->      
+        <a class="menu-toggle mobile-visible">
+        <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <!-- .container -->
-    </div>
-    <!-- /about -->
-    <div id="portfolio" class="content fadeIn">
-      <div class="container">
-        <div class="gridywrap">
-          <div class="gridy-2 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/12_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Monkey's Discovery</h3>
-              <p class="gridexerpt">A photobash of Flaming Geyser State Park's Green River</p>
-              <a href="https://syafmz.artstation.com/projects/RY3VYW" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/03_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Sunny Boudelaire</h3>
-              <p class="gridexerpt">The Chef</p>
-              <a href="https://syafmz.artstation.com/projects/DxYGnA" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-2">
-            <div class="gridimg" style="background-image: url(img/portfolio/04_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Sherlock Holmes</h3>
-              <p class="gridexerpt">Benedict Cumberbatch as Sherlock Holmes</p>
-              <a href="https://syafmz.artstation.com/projects/GXaKRN" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-2 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/17_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Texture Study</h3>
-              <p class="gridexerpt">A study of different textures</p>
-              <a href="https://syafmz.artstation.com/projects/QzrVvl" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/07_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>A New Friend</h3>
-              <p class="gridexerpt">Unicorn meets a new friend</p>
-              <a href="https://syafmz.artstation.com/projects/v12reE" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/20_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>DARKNESS</h3>
-              <p class="gridexerpt">2D Animation Short by #FIVE</p>
-              <a href="https://syafmz.artstation.com/projects/1nro63" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/08_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Merida</h3>
-              <p class="gridexerpt">Game art character concepts</p>
-              <a href="https://syafmz.artstation.com/projects/RY3VAD" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-2 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/06_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Castle</h3>
-              <p class="gridexerpt">Environment concept art</p>
-              <a href="https://syafmz.artstation.com/projects/N5N8GJ" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/19_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Tyrone</h3>
-              <p class="gridexerpt">An original 3D character creation, modelling, texturing, rigging and animation</p>
-              <a href="https://syafmz.artstation.com/projects/OyVlx8" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/24_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Detective's Office</h3>
-              <p class="gridexerpt">A background artwork for a visual novel</p>
-              <a href="https://syafmz.artstation.com/projects/L23VKv" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/11_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Ruby Red</h3>
-              <p class="gridexerpt">Study of exaggeration of facial features and anatomy</p>
-              <a href="https://syafmz.artstation.com/projects/YaeVA3" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-3 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/01_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Temple of Horus</h3>
-              <p class="gridexerpt">A 3D environment showcase of the Temple of Horus, re-imagined</p>
-              <a href="https://syafmz.artstation.com/projects/mqPbm9" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-2">
-            <div class="gridimg" style="background-image: url(img/portfolio/13_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Underwater Hybrid</h3>
-              <p class="gridexerpt">Hybrid of two animals</p>
-              <a href="https://syafmz.artstation.com/projects/v12r6O" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-2 gridyhe-2">
-            <div class="gridimg" style="background-image: url(img/portfolio/15_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Depth in Greyscale</h3>
-              <p class="gridexerpt">A tonal practice</p>
-              <a href="https://syafmz.artstation.com/projects/1n8r0G" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-2 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/14_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Dwarka Mahabharata</h3>
-              <p class="gridexerpt">Re-visioning the town of Dwarka</p>
-              <a href="https://syafmz.artstation.com/projects/4b8xYL" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/02_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Nekali</h3>
-              <p class="gridexerpt">Process of planning and sketching to the final model sheet</p>
-              <a href="https://syafmz.artstation.com/projects/1n8rAZ" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-2">
-            <div class="gridimg" style="background-image: url(img/portfolio/23_06.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Brochure Design</h3>
-              <p class="gridexerpt">A re-design of a brochure for a company that sells supplements</p>
-              <a href="https://syafmz.artstation.com/projects/rRneD2" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-2 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/10_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>What lurks in the deep</h3>
-              <p class="gridexerpt">What do mermaids really look like?</p>
-              <a href="https://syafmz.artstation.com/projects/XBnVKL" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/05_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Preternatural</h3>
-              <p class="gridexerpt">Preternatural is a 3rd person explorative psychological horror experience game</p>
-              <a href="https://syafmz.artstation.com/projects/xz4624" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/21_02.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Steamed Seafoods</h3>
-              <p class="gridexerpt">A game where the player needs to get rid of the bombs that are trying to ruin your perfectly good seafood!</p>
-              <a href="https://syafmz.artstation.com/projects/9eLbON" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-2 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/16_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>The Other World</h3>
-              <p class="gridexerpt">Some time in the future on another planet</p>
-              <a href="https://syafmz.artstation.com/projects/9emLdW" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/22_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>A Play in Perspective</h3>
-              <p class="gridexerpt">Two point perspective with varying horizon lines</p>
-              <a href="https://syafmz.artstation.com/projects/RYBzNW" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-1 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/09_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Jungle</h3>
-              <p class="gridexerpt">Concept Art for game</p>
-              <a href="https://syafmz.artstation.com/projects/4bgdwq" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-          <div class="gridy-2 gridyhe-1">
-            <div class="gridimg" style="background-image: url(img/portfolio/18_01.jpg)">&nbsp;</div>
-            <div class="gridinfo">
-              <h3>Library</h3>
-              <p class="gridexerpt">Unreal Engine 4 to create a game environment</p>
-              <a href="https://syafmz.artstation.com/projects/L2Bmll" class="grid-btn grid-more"><span>More</span> <i class="fa fa-plus"></i></a>
-            </div>
+      <!-- /Mobile Header -->
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper">
+          <!-- Subpages -->
+          <div class="subpages">
+            <!-- Home Subpage -->
+            <section class="pt-page" data-id="about">
+              <div class="section-inner start-page-full-width">
+                <div class="start-page-full-width">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="inner-content">
+                        <div class="fill-block"></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="inner-content">
+                        <div class="hp-text-block">
+                          <!-- Text rotation / Subtitle -->
+                          <div class="owl-carousel text-rotation">
+                            <div class="item">
+                              <div class="sp-subtitle">2D Generalist</div>
+                            </div>
+                            <div class="item">
+                              <div class="sp-subtitle">Educator</div>
+                            </div>
+                            <div class="item">
+                              <div class="sp-subtitle">Gamer</div>
+                            </div>
+                            <div class="item">
+                              <div class="sp-subtitle">Cat Lover</div>
+                            </div>
+                          </div>
+                          <!-- /Text rotation / Subtitle -->
+                          <h2 class="hp-main-title">Syafiqah Zailani</h2>
+                          <p>
+                            I am currently a final year undergrad of DigiPen Institute of Technology Singapore majoring in Digital Art and Animation. 
+                          </p>
+                          <p>
+                            I am absolutely passionate about art and I consider myself one of the lucky few who actually enjoy my job. I pride myself in being a diligent worker who strives to go above and beyond to deliver high quality work in a timely manner.
+                          </p>
+                          <p>
+                            I take my passion, knowledge, and expertise into each and every project so as to continue growing as an artist.
+                          </p>
+                          <div class="hp-buttons">
+                            <a href="upload/syafmz_resume.pdf" class="btn btn-primary" title="Download &#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;"><i class="fas fa-cloud-download-alt"></i>&nbsp;<strong>Download &#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;</strong></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-inner custom-page-content">
+                <div class="page-content">
+                  <!-- About Block Title -->    
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="col-inner">
+                        <div class="block-title">
+                          <h3>About me</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /About Block Title -->  
+                  <!-- About Block -->  
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
+                          <!-- About Item 1 -->
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="fas fa-desktop"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>2D Generalist</h4>
+                              <p>
+                                The nature of my studies has taught me a vast variety of 2D skills. This includes UI/UX design, graphic design, storyboarding, animatics, concept art, asset creation, illustration and matte painting. 
+                              </p>
+                              <p>I leverage upon these skills to value add and contribute to business objectives. To continue growing as an artist, I am motivated to keep learning and jump on opportunities that will allow me to do so.
+                              </p>
+                            </div>
+                          </div>
+                          <!-- /About Item 1 -->
+                          <!-- About Item 2 -->
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>Educator</h4>
+                              <p>
+                                Apart from being a full-time undergrad, I spend a good deal of time working as a freelance art teacher in Artary. I teach students how to paint, draw, and create art using various mediums.
+                              </p>
+                              <p>
+                                I believe in the phrase, "In learning you will teach, and in teaching you will learn."
+                              </p>
+                              <p>
+                                Balancing both creating and teaching art have been a source of absolute joy for me. Not only am I able to hone my craft as an artist, but I see every child as an opportunity to influence art in society.
+                              </p>
+                            </div>
+                          </div>
+                          <!-- About Item 2 -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
+                          <!-- About Item 3 -->
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>Gamer</h4>
+                              <p>
+                                When I am not working, I enjoy gaming with my friends and have recently built myself a custom gaming PC to play some of the newest releases. 
+                              </p>
+                              <p>
+                                Some titles I spent countless hours on are Defense of the Ancients (DotA), Dota Underlords, Don't Starve Together, Overcooked! and many more.
+                              </p>
+                            </div>
+                          </div>
+                          <!-- About Item 3 -->
+                          <!-- About Item 4 -->
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="fas fa-cat"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>Cat Lover</h4>
+                              <p>
+                                If you are also a cat lover, then we are already friends!
+                              </p>
+                              <p>
+                                My love for fluffy feline stretch back to my early childhood when I rescued a cat trapped in a fire hose reel cabinet. Since then, I took it upon myself to care for them and have personally rescued several more lost and distressed cats.
+                              </p>
+                              <p>
+                                Being around them calms me and I instantly feel at peace even in the worst days. Their curiosity, playfulness, and independence, pretty much shaped me into the person I am today.
+                              </p>
+                            </div>
+                          </div>
+                          <!-- About Item 4 -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /About Block -->
+                  <!-- Testimonials Block -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="col-inner bs-20">
+                        <!-- Testimonials Block Title -->
+                        <div class="block-title">
+                          <h3>Testimonials<span></span></h3>
+                        </div>
+                        <!-- /Testimonials Block Title -->
+                        <!-- Testimonials Carousel Block -->
+                        <div class="testimonials owl-carousel">
+                          <!-- Testimonial 1 -->
+                          <div class="testimonial-item">
+                            <!-- Testimonial Content -->
+                            <div class="testimonial-content">
+                              <div class="testimonial-text">
+                                <p>
+                                  Miss Syafiqah participated in JurongHealth internship program under my supervision. She took part in various stages of the development of corporate advertising. Overall, I am impressed with this outstanding young lady who produces high quality work. I highly recommend Miss Syafiqah for roles in the media industry that requires enthusiasm, intelligence, speed, and a positive attitude.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- /Testimonial Content -->
+                            <!-- Testimonial Author -->
+                            <div class="testimonial-credits">
+                              <!-- Picture -->
+                              <div class="testimonial-picture">
+                                <img src="img/testimonial/shawn_ngiam.jpg" alt="Shawn Ngiam"/>
+                              </div>
+                              <!-- /Picture -->
+                              <!-- Testimonial author information -->
+                              <div class="testimonial-author-info">
+                                <p class="testimonial-author">Shawn Ngiam</p>
+                                <p class="testimonial-firm">Assistant Manager, JurongHealth Campus</p>
+                              </div>
+                            </div>
+                            <!-- /Testimonial author information -->  
+                          </div>
+                          <!-- End of Testimonial 1 -->
+                          <!-- Testimonial 2 -->
+                          <div class="testimonial-item">
+                            <!-- Testimonial Content -->
+                            <div class="testimonial-content">
+                              <div class="testimonial-text">
+                                <p>Working in a game development team with Syafiqah, I was impressed with Syafiqah's depth of knowledge in both the technical aspects and visual arts for game development that she has contributed to the team. I enjoyed working with her on the various projects we took on. She is a teacher, a mentor, and a friend.</p>
+                              </div>
+                            </div>
+                            <!-- /Testimonial Content -->
+                            <!-- Testimonial Author -->
+                            <div class="testimonial-credits">
+                              <!-- Picture -->
+                              <div class="testimonial-picture">
+                                <img src="img/testimonial/alfi-lee.jpg" alt="Alfi Lee"/>
+                              </div>
+                              <!-- /Picture -->
+                              <!-- Testimonial author information -->
+                              <div class="testimonial-author-info">
+                                <p class="testimonial-author">Alfi Lee</p>
+                                <p class="testimonial-firm">Junior Developer, Smaato</p>
+                              </div>
+                            </div>
+                            <!-- /Testimonial author information -->  
+                          </div>
+                          <!-- End of Testimonial 2 -->
+                          <!-- Testimonial 3 -->
+                          <div class="testimonial-item">
+                            <!-- Testimonial Content -->
+                            <div class="testimonial-content">
+                              <div class="testimonial-text">
+                                <p>Visited Syafiqah's booth during her recent Career Fair. I must say that I was inspired with Syafiqah's presentation. I think she conducted herself professionally and elegantly.</p>
+                              </div>
+                            </div>
+                            <!-- /Testimonial Content -->
+                            <!-- Testimonial Author -->
+                            <div class="testimonial-credits">
+                              <!-- Picture -->
+                              <div class="testimonial-picture">
+                                <img src="img/testimonial/mohd_asyraf.jpg" alt="Mohd Asyraf"/>
+                              </div>
+                              <!-- /Picture -->
+                              <!-- Testimonial author information -->
+                              <div class="testimonial-author-info">
+                                <p class="testimonial-author">Mohd Asyraf</p>
+                                <p class="testimonial-firm">Student, Ngee Ann Polytechnic</p>
+                              </div>
+                            </div>
+                            <!-- /Testimonial author information -->  
+                          </div>
+                          <!-- End of Testimonial 3 -->
+                        </div>
+                        <!-- /Testimonials Carousel Block -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Testimonials Block -->
+                </div>
+              </div>
+            </section>
+            <!-- End of Home Subpage -->
+            <!-- Portfolio Subpage -->
+            <section class="pt-page" data-id="portfolio">
+              <div class="section-inner custom-page-content">
+                <div class="section-title-block second-style">
+                  <h2 class="section-title">Portfolio</h2>
+                  <h5 class="section-description">My Works</h5>
+                </div>
+                <div class="section-content">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <!-- Portfolio Content -->
+                      <div class="portfolio-content bs-20">
+                        <ul class="portfolio-filters">
+                          <li class="active">
+                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_media">Media</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
+                          </li>
+                        </ul>
+                        <!-- Portfolio Grid -->
+                        <div class="portfolio-grid three-columns">
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/01_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/02_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/03_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/04_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/05_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/06_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/07_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/08_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/09_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/10_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/11_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/12_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/13_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/14_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/15_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/16_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/17_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/18_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/19_01.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 2</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/20_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/21_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/22_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/23_01.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Media Project 1</h4>
+                            <span class="category">Media</span>
+                          </figure>
+                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                            <div class="portfolio-item-img">
+                              <img src="images/portfolio/5.jpg" alt="Mockup Design 1" title="" />
+                              <a class="lightbox" title="Mockup Design 1" href="images/portfolio/5.jpg"></a>
+                            </div>
+                            <i class="far fa-image"></i>
+                            <h4 class="name">Mockup Design 1</h4>
+                            <span class="category">Mockups</span>
+                          </figure>
+                          <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
+                            <div class="portfolio-item-img">
+                              <img src="images/portfolio/6.jpg" alt="YouTube Video 1" title="" />
+                              <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe" title="YouTube Video 1"></a>
+                            </div>
+                            <i class="fas fa-video"></i>
+                            <h4 class="name">YouTube Video 1</h4>
+                            <span class="category">YouTube Videos</span>
+                          </figure>
+                        </div>
+                      </div>
+                      <!-- /Portfolio Content -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /Portfolio Subpage -->
+            <!-- Resume Subpage -->
+            <section class="pt-page" data-id="resume">
+              <div class="section-inner custom-page-content">
+                <div class="section-title-block second-style">
+                  <h2 class="section-title">&#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;</h2>
+                  <h5 class="section-description">
+                    <script src="js/experience.js"></script> Years of Experience
+                  </h5>
+                </div>
+                <div class="section-content">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                      <div id="sidebar">
+                        <img class="sidebar-me" src="img/resume.jpg" alt="about-me"/>
+                        <h2 class="sb-name">Syafiqah Zailani</h2>
+                        <h2 class="sb-title">2D Generalist</h2>
+                        <a href="upload/syafmz_resume.pdf" class="btn btn-primary" title="Download &#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;"><i class="fas fa-cloud-download-alt"></i>&nbsp;<strong>Download &#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;</strong></a>
+                        <div id="skills">
+                          <div class="block-title">
+                            <h3>Skills<span></span></h3>
+                          </div>
+                          <div class="skills-info skills-second-style">
+                            <!-- Skill 1 -->
+                            <div class="clearfix">
+                              <h4>Photoshop</h4>
+                              <div class="skill-value">95%</div>
+                            </div>
+                            <div class="skill-container">
+                              <div class="skill-percentage skill-1"></div>
+                            </div>
+                            <!-- /Skill 1 -->
+                            <!-- Skill 2 -->
+                            <div class="clearfix">
+                              <h4>Illustrator</h4>
+                              <div class="skill-value">55%</div>
+                            </div>
+                            <div class="skill-container">
+                              <div class="skill-percentage skill-2"></div>
+                            </div>
+                            <!-- /Skill 2 -->
+                            <!-- Skill 3 -->
+                            <div class="clearfix">
+                              <h4>3ds Max / Maya</h4>
+                              <div class="skill-value">75%</div>
+                            </div>
+                            <div class="skill-container">
+                              <div class="skill-percentage skill-3"></div>
+                            </div>
+                            <!-- /Skill 3 -->
+                            <!-- Skill 4 -->
+                            <div class="clearfix">
+                              <h4>Unreal Engine 4</h4>
+                              <div class="skill-value">55%</div>
+                            </div>
+                            <div class="skill-container">
+                              <div class="skill-percentage skill-4"></div>
+                            </div>
+                            <!-- /Skill 4 -->
+                            <!-- Skill 5 -->
+                            <div class="clearfix">
+                              <h4>Premiere Pro</h4>
+                              <div class="skill-value">75%</div>
+                            </div>
+                            <div class="skill-container">
+                              <div class="skill-percentage skill-5"></div>
+                            </div>
+                            <!-- /Skill 5 -->
+                            <!-- Skill 6 -->
+                            <div class="clearfix">
+                              <h4>After Effects</h4>
+                              <div class="skill-value">35%</div>
+                            </div>
+                            <div class="skill-container">
+                              <div class="skill-percentage skill-6"></div>
+                            </div>
+                            <!-- /Skill 6 -->
+                            <!-- Skill 7 -->
+                            <div class="clearfix">
+                              <h4>Substance Painter</h4>
+                              <div class="skill-value">35%</div>
+                            </div>
+                            <div class="skill-container">
+                              <div class="skill-percentage skill-7"></div>
+                            </div>
+                            <!-- /Skill 7 -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8">
+                      <div class="col-inner">
+                        <div class="block-title">
+                          <h3>Education</h3>
+                        </div>
+                        <div class="timeline timeline-second-style bs-20 clearfix">
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2014 - Present</h5>
+                              <span class="item-company">DigiPen Institute of Technology Singapore</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Bachelor of Fine Arts in Digital Art and Animation</h4>
+                              <p>Awarded Commissioner of Police Study Award (Singapore Police Force) for two consecutive years in 2016 and 2017.</p>
+                            </div>
+                          </div>
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2011 - 2014</h5>
+                              <span class="item-company">Republic Polytechnic<br>School of Technology for the Arts</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Diploma in Design for Interactivity</h4>
+                              <p>Inducted into Director's Roll of Honour in 2014.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="block-title">
+                          <h3>Experience<span></span></h3>
+                        </div>
+                        <div class="timeline timeline-second-style bs-20 clearfix">
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2019 - Present</h5>
+                              <span class="item-company">UTS Printing and Publishing Services</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Illustrator</h4>
+                              <p>Headhunted by an author to illustrate the layout and composition for her new children's book. I designed the character and environment concepts with full colour illustrations to make reading appealing to children. The project was delivered within a tight deadline and has been sent for vetting to the Ministry of Education, Singapore.</p>
+                            </div>
+                          </div>
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2017 - Present</h5>
+                              <span class="item-company">ARTARY<br>Academy of Children's Art</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Freelance Art Teacher</h4>
+                              <p>Responsible for assisting and guiding students to acquire, master, and build a strong foundation in fine art. I am one of the very few senior teachers experienced to teach the higher-level programmes which demand advanced illustration and painting techniques. I also maintain close communication with parents concerning the progress of their child.</p>
+                            </div>
+                          </div>
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2013</h5>
+                              <span class="item-company">JurongHealth Campus<br>Alexandra Hospital</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Multimedia Specialist Intern</h4>
+                              <p>Responsible for creative content creation and production for print and digital platforms. During my term, I designed online posters for staff events and initiated to construct the staff's learning calendar. The designs were well-received and printed for mass circulation.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="block-title">
+                          <h3>Volunteer Experience</h3>
+                        </div>
+                        <div class="timeline timeline-second-style bs-20 clearfix">
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2012</h5>
+                              <span class="item-company">Bukit Batok Community Club<br>People's Association</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Volunteer - Mentor</h4>
+                              <p>Coached and mentored needy students from primary schools for the Community Club's Malay Activity Executive Committees 'Progress Class' tuition and mentoring programme.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="block-title">
+                          <h3>Projects<span></span></h3>
+                        </div>
+                        <div class="timeline timeline-second-style bs-20 clearfix">
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2019</h5>
+                              <span class="item-company">DigiPen Institute of Technology Singapore</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Temple of Horus</h4>
+                              <i>3D Environment Showcase</i>
+                              <p>Led a team of three in designing a 3D environment. Planned the lighting and created visual effects to further enhance the mood of the final environment.</p>
+                            </div>
+                          </div>
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2018</h5>
+                              <span class="item-company">DigiPen Institute of Technology Singapore</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Preternatural</h4>
+                              <i>3D Horror Game</i>
+                              <p>Created concept arts to visualize the mood and lighting of the game. Designed, modelled, textured, and animated the antagonist of the game.</p>
+                            </div>
+                          </div>
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2017</h5>
+                              <span class="item-company">DigiPen Institute of Technology Singapore</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Darkness</h4>
+                              <i>2D Animation Short</i>
+                              <p>Designed and painted the environment of a 2D animation. Led artists to ensure consistency of the environment art.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="block-title">
+                          <h3>Achievements</h3>
+                        </div>
+                        <div class="timeline timeline-second-style clearfix">
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">2018</h5>
+                              <span class="item-company">DigiPen (Singapore) Game Awards</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">Preternatural</h4>
+                              <i>Finalist, Best 3D Visual Design</i>
+                              <p>Preternatural is a third-person explorative psychological horror experience game with puzzle elements where players interact with objects to explore a seemingly abandoned mansion while unfolding a certain story behind it.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Resume Subpage -->
+            <!-- Contact Subpage -->
+            <section class="pt-page" data-id="contact">
+              <div class="section-inner custom-page-content">
+                <div class="section-title-block second-style">
+                  <h2 class="section-title">Contact</h2>
+                  <h5 class="section-description">Get in Touch</h5>
+                </div>
+                <div class="section-content">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div id="contact">
+                        <h1>I love working with people, especially if we share the same passions.</h1>
+                        <h1>If you have a project, want to share user experience, or just want to say hello, </h1>
+                        <h1>I'd be happy to talk to you!</h1>
+                        <h1>
+                          <a href="&#x74;&#x65;&#x6c;&#x3a;&#x2b;&#x36;&#x35;&#x39;&#x33;&#x33;&#x39;&#x38;&#x37;&#x37;&#x30;" title="Mobile"><i class="fas fa-mobile-alt"></i>&#x28;&#x2b;&#x36;&#x35;&#x29;&#x20;&#x39;&#x33;&#x33;&#x39;&#x20;&#x38;&#x37;&#x37;&#x30;
+                          </a>
+                        </h1>
+                        <h1>
+                          <a class="contact-email" href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x79;&#x61;&#x66;&#x69;&#x71;&#x61;&#x68;&#x7a;&#x61;&#x69;&#x6c;&#x61;&#x6e;&#x69;&#x32;&#x36;&#x39;&#x34;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" title="Email"><i class="far fa-envelope"></i>&#x73;&#x79;&#x61;&#x66;&#x69;&#x71;&#x61;&#x68;&#x7a;&#x61;&#x69;&#x6c;&#x61;&#x6e;&#x69;&#x32;&#x36;&#x39;&#x34;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a>
+                        </h1>
+                        <div id="socmed">
+                          <a href="https://www.artstation.com/syafmz" target="_blank" title="Checkout my artwork!"><i class="fab fa-artstation"></i></a>
+                          <a href="https://www.instagram.com/syxfmz/" target="_blank" title="Follow Me!"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.linkedin.com/in/syafmz/" target="_blank" title="Let's get professional!"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <!-- /socmed -->
+                      </div>
+                      <!-- /contact -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Contact Subpage -->
           </div>
         </div>
+        <!-- /Page changer wrapper -->
       </div>
-      <!-- .container -->
+      <!-- /Main Content -->
     </div>
-    <!-- /portfolio -->
-    <div id="resume" class="content fadeIn">
-      <div class="container">
-        <div class="flexbox">
-          <div class="column">
-            <div id="sidebar" class="clearfix">
-              <img class="sidebar-me" src="img/resume.jpg" alt="about-me"/>
-              <h2>Syafiqah Zailani</h2>
-              <h2 class="sb-title"><span>2D Generalist</span></h2>
-              <a class="download" href="upload/syafmz_resume.pdf" title="Download &#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;"><i class="fa fa-cloud-download"></i>&nbsp;<strong>Download &#x52;&#xe9;&#x73;&#x75;&#x6d;&#xe9;</strong></a>
-              <p><img class="sidebar-hp" src="img/icons/hp.png" alt="Mobile"/><a href="&#x74;&#x65;&#x6c;&#x3a;&#x2b;&#x36;&#x35;&#x39;&#x33;&#x33;&#x39;&#x38;&#x37;&#x37;&#x30;" title="Mobile">&#x28;&#x2b;&#x36;&#x35;&#x29;&#x20;&#x39;&#x33;&#x33;&#x39;&#x20;&#x38;&#x37;&#x37;&#x30;
-                </a> 
-              </p>
-              <p><img class="sidebar-email" src="img/icons/gm.png" alt="Email"/><a class="sb-email" href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x79;&#x61;&#x66;&#x69;&#x71;&#x61;&#x68;&#x7a;&#x61;&#x69;&#x6c;&#x61;&#x6e;&#x69;&#x32;&#x36;&#x39;&#x34;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" title="Email">&#x73;&#x79;&#x61;&#x66;&#x69;&#x71;&#x61;&#x68;&#x7a;&#x61;&#x69;&#x6c;&#x61;&#x6e;&#x69;&#x32;&#x36;&#x39;&#x34;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;
-                </a>
-              </p>
-              <div id="skills">
-                <h1>Skills</h1>
-                <ul>
-                  <li>
-                    <span class="bar ps"></span>
-                    <p>Photoshop</p>
-                  </li>
-                  <li>
-                    <span class="bar il"></span>
-                    <p>Illustrator</p>
-                  </li>
-                  <li>
-                    <span class="bar ds"></span>
-                    <p>3ds Max / Maya</p>
-                  </li>
-                  <li>
-                    <span class="bar ue"></span>
-                    <p>Unreal Engine 4</p>
-                  </li>
-                  <li>
-                    <span class="bar pp"></span>
-                    <p>Premiere Pro</p>
-                  </li>
-                  <li>
-                    <span class="bar ae"></span>
-                    <p>After Effects</p>
-                  </li>
-                  <li>
-                    <span class="bar sp"></span>
-                    <p>Substance Painter</p>
-                  </li>
-                </ul>
-                <!-- /skills -->
-              </div>
-            </div>
-            <!-- .sidebar -->
-          </div>
-          <!-- .column -->
-          <div class="column timeline">
-            <div class="heading">
-              <img class="tl-education" src="img/icons/education.png" alt="Education" />
-              <h1>Education</h1>
-            </div>
-            <!-- .heading -->  
-            <div class="clearfix">
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2014 - Present</h2>
-                  <span class="item-company">DigiPen Institute of Technology Singapore</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Bachelor of Fine Arts in Digital Art and Animation</h2>
-                  <p>Awarded Commissioner of Police Study Award (Singapore Police Force) for two consecutive years in 2016 and 2017</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2011 - 2014</h2>
-                  <span class="item-company">Republic Polytechnic<br>School of Technology for the Arts</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Diploma in Design for Interactivity</h2>
-                  <p>Inducted into Director's Roll of Honour in 2014</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-            </div>
-            <!-- .clearfix -->
-            <div class="heading">
-              <img class="tl-experience" src="img/icons/experience.png" alt="Experience" />
-              <h1>Experience</h1>
-            </div>
-            <!-- .heading -->             
-            <div class="clearfix">
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2019 - Present</h2>
-                  <span class="item-company">UTS Printing and Publishing Services</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Illustrator</h2>
-                  <p>Headhunted by an author to illustrate the layout and composition for her new children's book. I designed the character and environment concepts with full colour illustrations to make reading appealing to children. The project was delivered within a tight deadline and has been sent for vetting to the Ministry of Education, Singapore.</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2017 - Present</h2>
-                  <span class="item-company">ARTARY<br>Academy of Children's Art</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Freelance Art Teacher</h2>
-                  <p>Responsible for assisting and guiding students to acquire, master, and build a strong foundation in fine art. I am one of the very few senior teachers experienced to teach the higher-level programmes which demand advanced illustration and painting techniques. I also maintain close communication with parents concerning the progress of their child.</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2013</h2>
-                  <span class="item-company">JurongHealth Campus<br>Alexandra Hospital</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Multimedia Specialist Intern</h2>
-                  <p>Responsible for creative content creation and production for print and digital platforms. During my term, I designed online posters for staff events and initiated to construct the staff's learning calendar. The designs were well-received and printed for mass circulation.</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-            </div>
-            <!-- .clearfix -->
-            <div class="heading">
-              <img class="tl-volunteer" src="img/icons/volunteer.png" alt="Volunteer" />
-              <h1>Volunteer Experience</h1>
-            </div>
-            <!-- .heading -->            
-            <div class="clearfix">
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2012</h2>
-                  <span class="item-company">Bukit Batok Community Club<br>People's Association</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Volunteer - Mentor</h2>
-                  <p>Coached and mentored needy students from primary schools for the Community Club's Malay Activity Executive Committees 'Progress Class' tuition and mentoring programme.</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-            </div>
-            <!-- .clearfix -->
-            <div class="heading">
-              <img class="tl-projects" src="img/icons/projects.png" alt="Projects" />
-              <h1>Projects</h1>
-            </div>
-            <!-- .heading -->
-            <div class="clearfix">
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2019</h2>
-                  <span class="item-company">DigiPen Institute of Technology Singapore</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Temple of Horus</h2>
-                  <i>3D Environment Showcase</i>
-                  <p>Led a team of three in designing a 3D environment. Planned the lighting and created visual effects to further enhance the mood of the final environment.</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2018</h2>
-                  <span class="item-company">DigiPen Institute of Technology Singapore</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Preternatural</h2>
-                  <i>3D Horror Game</i>
-                  <p>Created concept arts to visualize the mood and lighting of the game. Designed, modelled, textured, and animated the antagonist of the game.</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2017</h2>
-                  <span class="item-company">DigiPen Institute of Technology Singapore</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Darkness</h2>
-                  <i>2D Animation Short</i>
-                  <p>Designed and painted the environment of a 2D animation. Led artists to ensure consistency of the environment art.</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-            </div>
-            <!-- .clearfix -->
-            <div class="heading">
-              <img class="tl-achievements" src="img/icons/achievements.png" alt="Achievements" />
-              <h1>Achievements</h1>
-            </div>
-            <!-- .heading -->       
-            <div class="clearfix">
-              <div class="timeline-item clearfix">
-                <div class="left-part">
-                  <h2 class="item-period">2018</h2>
-                  <span class="item-company">DigiPen (Singapore) Game Awards</span>
-                </div>
-                <!-- .left-part -->
-                <div class="divider"></div>
-                <div class="right-part">
-                  <h2 class="item-title">Preternatural</h2>
-                  <i>Finalist, Best 3D Visual Design</i>
-                  <p>Preternatural is a third-person explorative psychological horror experience game with puzzle elements where players interact with objects to explore a seemingly abandoned mansion while unfolding a certain story behind it.</p>
-                </div>
-                <!-- .right-part -->
-              </div>
-              <!-- .timeline-item -->
-            </div>
-            <!-- .clearfix -->      
-          </div>
-          <!-- .column -->
-        </div>
-        <!-- .flexbox -->
-      </div>
-      <!-- .container -->
-    </div>
-    <!-- /resume -->
-    <div id="contact" class="content fadeIn">
-      <div class="container">
-        <h1>I love working with people, especially if we share the same passions.</h1>
-        <h1>If you have a project, want to share user experience, or just want to say hello, </h1>
-        <h1>I'd be happy to talk to you!</h1>
-        <h1>
-          <img class="contact-hp" src="img/icons/hp.png" alt="Mobile"/><a href="&#x74;&#x65;&#x6c;&#x3a;&#x2b;&#x36;&#x35;&#x39;&#x33;&#x33;&#x39;&#x38;&#x37;&#x37;&#x30;" title="Mobile">&#x28;&#x2b;&#x36;&#x35;&#x29;&#x20;&#x39;&#x33;&#x33;&#x39;&#x20;&#x38;&#x37;&#x37;&#x30;
-          </a>
-        </h1>
-        <h1>
-          <img src="img/icons/gm.png" alt="Email"/>&nbsp;<a class="contact-email" href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x79;&#x61;&#x66;&#x69;&#x71;&#x61;&#x68;&#x7a;&#x61;&#x69;&#x6c;&#x61;&#x6e;&#x69;&#x32;&#x36;&#x39;&#x34;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" title="Email">&#x73;&#x79;&#x61;&#x66;&#x69;&#x71;&#x61;&#x68;&#x7a;&#x61;&#x69;&#x6c;&#x61;&#x6e;&#x69;&#x32;&#x36;&#x39;&#x34;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;
-          </a>
-        </h1>
-        <div id="socmed">
-          <a href="https://syafmz.artstation.com/" target="_blank" title="Checkout my artwork!"><img src="img/icons/as.png" alt="Artstation"/></a>
-          <a href="https://www.instagram.com/syxfmz/" target="_blank" title="Follow Me!"><img src="img/icons/ig.png" alt="Instagram"/></a>
-          <a href="https://www.linkedin.com/in/syafmz" target="_blank" title="Let's get professional!"><img src="img/icons/li.png" alt="LinkedIn"/></a>
-        </div>
-        <!-- /socmed -->
-      </div>
-      <!-- .container -->
-    </div>
-    <!-- /contact -->
-    <footer>
-      <div class="container">
-        Copyright &copy; <script src="js/footer.js"></script>, All Rights Reserved<br>
-        Developed By <a href="https://twitter.com/Lee7alfie" target="_blank" title="Lee7alfie">Alfi Lee</a> • Designed By <a href="" title="Syafmz">Syafiqah Zailani</a>
-      </div>
-      <!-- .container -->
-    </footer>
-    <!-- Link javascript here -->
-    <script src="js/vendor/modernizr.custom.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/content.js"></script>
-    <script src="js/headerBorder.js"></script>
-    <script src="js/slideshow.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-150741290-1', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pages-switcher.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
+
