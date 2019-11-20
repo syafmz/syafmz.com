@@ -44,7 +44,7 @@
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   z-index: 1045; }
 
 .mfp-inline-holder .mfp-content,
@@ -300,7 +300,6 @@ img.mfp-img {
 .mfp-bottom-iframe-title {
   position: absolute;
   margin-top: 10px;
-  text-align: center;
 }
 
 .mfp-image-holder .mfp-content {
