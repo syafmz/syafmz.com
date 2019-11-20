@@ -1916,10 +1916,10 @@ h2.sb-title {
 }
 /* / Google Map */
 
-/* #contact { */
-  /* background: url("../img/castle.png") no-repeat left center; */
-  /* background-size: cover; */
-/* } */
+#contact {
+  background: url("../img/castle.png") no-repeat left center;
+  background-size: contain;
+}
 
 #contact h1 {
   text-align: center;
