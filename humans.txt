@@ -4,12 +4,12 @@
 # TEAM
 
   Name: Alfi Lee
-  Site: http://alfi.gg
-  Twitter: http://twitter.com/Lee7alfie
+  Site: https://alfi.gg
+  Twitter: https://twitter.com/Lee7alfie
   Location: Singapore
 
   Name: Syafiqah Zailani
-  Site: http://syafmz.com
+  Site: https://syafmz.com
   Instagram: https://www.instagram.com/syxfmz/
   Location: Singapore
 
@@ -21,7 +21,7 @@
 
   Last update: 2019/10/01
   Language: English
-  Font: http://www.google.com/webfonts
+  Font: https://fonts.google.com/
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
   Software: Notepad++, Adobe Photoshop CC 2019
