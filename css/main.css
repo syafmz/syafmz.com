@@ -1917,7 +1917,7 @@ h2.sb-title {
 /* / Google Map */
 
 #mycontact {
-   background: url("../img/castle.png") no-repeat left center;
+  background: url("../img/castle.png") no-repeat left center;
   background-size: contain;
 }
 
@@ -2959,7 +2959,10 @@ blockquote p {
     width: 100%;
     max-width: 100%;
     background: #34373d url('../img/bg.png');
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #000;
+    -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
     left: 0;
     right: 0;
     height: 50px;
