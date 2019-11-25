@@ -20,6 +20,17 @@
 
 ============================================================================= */
 
+/* ==========================================================================
+  Color swatch: 
+    Bg color:             #34373d (Black)
+    Text color:           #e0eaf2 (Pale blue)
+    Light text color:     #757575 (Light Grey)
+    Highlight bg color:   #329bfa (Bright blue)
+    Highlight text color: #34373d (Black)
+    Hyperlink unactive:   #dabd9f (Beige)
+    Hyperlink active:     #e0eaf2 (Pale blue)
+    Border:               #4a4d54 (Light Grey)
+   ========================================================================== */
 
 /* ============================================================================= 
 1. Fonts
@@ -53,13 +64,9 @@ body {
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: #000;
     overflow: hidden;
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-color: transparent;
+    background: #34373d url('../img/bg.png');
 }
 
 body, p {
@@ -808,9 +815,12 @@ blockquote {
   top: 0;
   bottom: 0;
   padding: 10px 0 0;
-   background: #34373d url('../img/bg.png');
+  background: #34373d url('../img/bg.png');
   overflow: auto;
   z-index: 11;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
 }
 
 .header * {
@@ -2906,9 +2916,9 @@ blockquote p {
     opacity: 1;
     overflow: auto;
     visibility: visible;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.18);
-    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.18);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.18);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
     -webkit-transition: all 0s ease-in-out;
     -moz-transition: all 0s ease-in-out;
     -o-transition: all 0s ease-in-out;
