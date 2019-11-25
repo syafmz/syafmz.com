@@ -87,21 +87,6 @@ body.ajax-page-visible {
   overflow: hidden;
 }
 
-body::-webkit-scrollbar {
-  position: absolute;
-  width: 8px;
-  margin-left: -8px;
-}
- 
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: #9e9e9e;
-  outline: 1px solid slategrey;
-}
-
 ::-moz-selection {
   background: #329bfa;
   color: #34373d;
@@ -2855,33 +2840,6 @@ blockquote p {
 }
 
 @media only screen and (min-width: 991px) {
-  body::-webkit-scrollbar,
-  .pt-page::-webkit-scrollbar,
-  .single-page-content::-webkit-scrollbar,
-  .header::-webkit-scrollbar,
-  .portfolio-page-content::-webkit-scrollbar {
-    position: absolute;
-    width: 5px;
-    margin-left: -5px;
-  }
-   
-  body::-webkit-scrollbar-track,
-  .pt-page::-webkit-scrollbar-track,
-  .single-page-content::-webkit-scrollbar-track,
-  .header::-webkit-scrollbar-track,
-  .portfolio-page-content::-webkit-scrollbar-track {
-    background-color: #fcfcfc;
-  }
-   
-  body::-webkit-scrollbar-thumb,
-  .pt-page::-webkit-scrollbar-thumb,
-  .single-page-content::-webkit-scrollbar-thumb,
-  .header::-webkit-scrollbar-thumb,
-  .portfolio-page-content::-webkit-scrollbar-thumb {
-    background-color: #dedede;
-    outline: 1px solid slategrey;
-  }
-
   .site-main {
     margin-left: 160px;
   }
