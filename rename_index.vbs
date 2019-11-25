@@ -1,4 +1,4 @@
-intAnswer = Msgbox("Do you want to modify index.html?", vbOKCancel, "Confirm")
+intAnswer = Msgbox("Proceed to modify index.html?", vbOKCancel, "Confirm")
 
 If intAnswer = vbOK Then
   numOfItems = InputBox("Enter current max number of portfolio items:", "Enter Value")

@@ -1,4 +1,4 @@
-intAnswer = Msgbox("Do you want to rename portfolio items?", vbOKCancel, "Confirm")
+intAnswer = Msgbox("Proceed to rename portfolio items?", vbOKCancel, "Confirm")
 
 If intAnswer = vbOK Then
   Const SubPortfolioPath = ".\portfolio\portfolio"
