@@ -5,6 +5,7 @@ If intAnswer = vbOK Then
   numOfItems = InputBox("Enter current max number of portfolio items:", "Enter Value")
   Const ForReading = 1
   Const ForWriting = 2
+  Const html = ".html"
   Const strPre = "portfolio/"
   
   Set objFSO = CreateObject("Scripting.FileSystemObject")
@@ -47,28 +48,120 @@ If intAnswer = vbOK Then
   End If
   
   For Each File In Portfolio.Files
-      portfolioFile = File.Name
-      i = Int(Left(portfolioFile,2))
-      
-      If (i < 10) Then
-        strOld = "0" + CStr(i)
-      Else
-        strOld = CStr(i)
-      End If
-      
-      strInc = i + 1
+    portfolioFile = File.Name
+    portfolioCurr = Int(Left(portfolioFile,2))
     
-      If (strInc < 10) Then
-        strNew = "0" + CStr(strInc)
+    ' Modify portfolio items
+    If (Right(portfolioFile,5) = html) Then
+      If (portfolioCurr = 1) Then
+        Set objFile = objFSO.OpenTextFile(File.Path, ForReading)
+        strText = objFile.ReadAll
+        objFile.Close
+        
+        strNewText = Replace(strText, " style=" & Chr(34) & "visibility: hidden" & Chr(34), "")
+        
+        Set objFile = objFSO.OpenTextFile(File.Path, ForWriting)
+        objFile.Write strNewText
+        objFile.Close
+      End If
+      
+      ' Start of Next
+      Set objFile = objFSO.OpenTextFile(File.Path, ForReading)
+      strText = objFile.ReadAll
+      objFile.Close
+      portfolioNext = portfolioCurr + 1
+      
+      If (portfolioNext < 10) Then
+        strOld = strPre + "0" + CStr(portfolioNext)
       Else
-        strNew = CStr(strInc)
+        strOld = strPre + CStr(portfolioNext)
       End If
       
-      portfolioFile = Replace(portfolioFile,strOld,strNew,1,1)
+      portfolioInc = portfolioNext + 1
       
-      If (portfolioFile<>File.Name) Then
-        File.Move(SubPortfolio+"\"+portfolioFile)
+      If (portfolioInc < 10) Then
+        strNew = strPre + "0" + CStr(portfolioInc)
+      Else
+        strNew = strPre + CStr(portfolioInc)
       End If
+      
+      strNewText = Replace(strText, strOld, strNew)
+      Set objFile = objFSO.OpenTextFile(File.Path, ForWriting)
+      objFile.Write strNewText
+      objFile.Close
+      ' End of Next
+      
+      ' Start of Curr
+      Set objFile = objFSO.OpenTextFile(File.Path, ForReading)
+      strText = objFile.ReadAll
+      objFile.Close
+      
+      If (portfolioCurr < 10) Then
+        strOld = strPre + "0" + CStr(portfolioCurr)
+      Else
+        strOld = strPre + CStr(portfolioCurr)
+      End If
+      
+      portfolioInc = portfolioCurr + 1
+      
+      If (portfolioInc < 10) Then
+        strNew = strPre + "0" + CStr(portfolioInc)
+      Else
+        strNew = strPre + CStr(portfolioInc)
+      End If
+      
+      strNewText = Replace(strText, strOld, strNew)
+      Set objFile = objFSO.OpenTextFile(File.Path, ForWriting)
+      objFile.Write strNewText
+      objFile.Close
+      ' End of Curr
+      
+      ' Start of Prev
+      Set objFile = objFSO.OpenTextFile(File.Path, ForReading)
+      strText = objFile.ReadAll
+      objFile.Close
+      portfolioPrev = portfolioCurr - 1
+      
+      If (portfolioPrev < 10) Then
+        strOld = strPre + "0" + CStr(portfolioPrev)
+      Else
+        strOld = strPre + CStr(portfolioPrev)
+      End If
+      
+      portfolioInc = portfolioPrev + 1
+      
+      If (portfolioInc < 10) Then
+        strNew = strPre + "0" + CStr(portfolioInc)
+      Else
+        strNew = strPre + CStr(portfolioInc)
+      End If
+      
+      strNewText = Replace(strText, strOld, strNew)
+      Set objFile = objFSO.OpenTextFile(File.Path, ForWriting)
+      objFile.Write strNewText
+      objFile.Close
+      ' End of Prev
+    End If
+    
+    If (portfolioCurr < 10) Then
+      strOld = "0" + CStr(portfolioCurr)
+    Else
+      strOld = CStr(portfolioCurr)
+    End If
+    
+    portfolioInc = portfolioCurr + 1
+  
+    If (portfolioInc < 10) Then
+      strNew = "0" + CStr(portfolioInc)
+    Else
+      strNew = CStr(portfolioInc)
+    End If
+    
+    portfolioFile = Replace(portfolioFile,strOld,strNew,1,1)
+    
+    If (portfolioFile<>File.Name) Then
+      File.Move(SubPortfolio+"\"+portfolioFile)
+    End If
   Next
 
   For Each File In SubPortfolio.Files
