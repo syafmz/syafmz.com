@@ -10,11 +10,11 @@ If intAnswer = vbOK Then
   
   Set objFSO = CreateObject("Scripting.FileSystemObject")
 
+  Set objFile = objFSO.OpenTextFile(".\index.html", ForReading)
+  strText = objFile.ReadAll
+  objFile.Close
+
   For i = numOfItems To 1 Step-1
-    Set objFile = objFSO.OpenTextFile(".\index.html", ForReading)
-    strText = objFile.ReadAll
-    objFile.Close
-    
     If (i < 10) Then
       strOld = strPre + "0" + CStr(i)
     Else
@@ -29,12 +29,12 @@ If intAnswer = vbOK Then
       strNew = strPre + CStr(strInc)
     End If
     
-    strNewText = Replace(strText, strOld, strNew)
-    
-    Set objFile = objFSO.OpenTextFile(".\index.html", ForWriting)
-    objFile.Write strNewText
-    objFile.Close
+    strText = Replace(strText, strOld, strNew)
   Next
+  
+  Set objFile = objFSO.OpenTextFile(".\index.html", ForWriting)
+  objFile.Write strText
+  objFile.Close
   
   ' Rename portfolio items
   Const SubPortfolioPath = ".\portfolio\portfolio"
@@ -53,22 +53,15 @@ If intAnswer = vbOK Then
     
     ' Modify portfolio items
     If (Right(portfolioFile,5) = html) Then
-      If (portfolioCurr = 1) Then
-        Set objFile = objFSO.OpenTextFile(File.Path, ForReading)
-        strText = objFile.ReadAll
-        objFile.Close
-        
-        strNewText = Replace(strText, " style=" & Chr(34) & "visibility: hidden" & Chr(34), "")
-        
-        Set objFile = objFSO.OpenTextFile(File.Path, ForWriting)
-        objFile.Write strNewText
-        objFile.Close
-      End If
-      
-      ' Start of Next
       Set objFile = objFSO.OpenTextFile(File.Path, ForReading)
       strText = objFile.ReadAll
       objFile.Close
+    
+      If (portfolioCurr = 1) Then
+        strText = Replace(strText, " style=" & Chr(34) & "visibility: hidden" & Chr(34), "")
+      End If
+      
+      ' Start of Next
       portfolioNext = portfolioCurr + 1
       
       If (portfolioNext < 10) Then
@@ -85,17 +78,10 @@ If intAnswer = vbOK Then
         strNew = strPre + CStr(portfolioInc)
       End If
       
-      strNewText = Replace(strText, strOld, strNew)
-      Set objFile = objFSO.OpenTextFile(File.Path, ForWriting)
-      objFile.Write strNewText
-      objFile.Close
+      strText = Replace(strText, strOld, strNew)
       ' End of Next
       
       ' Start of Curr
-      Set objFile = objFSO.OpenTextFile(File.Path, ForReading)
-      strText = objFile.ReadAll
-      objFile.Close
-      
       If (portfolioCurr < 10) Then
         strOld = strPre + "0" + CStr(portfolioCurr)
       Else
@@ -110,16 +96,10 @@ If intAnswer = vbOK Then
         strNew = strPre + CStr(portfolioInc)
       End If
       
-      strNewText = Replace(strText, strOld, strNew)
-      Set objFile = objFSO.OpenTextFile(File.Path, ForWriting)
-      objFile.Write strNewText
-      objFile.Close
+      strText = Replace(strText, strOld, strNew)
       ' End of Curr
       
       ' Start of Prev
-      Set objFile = objFSO.OpenTextFile(File.Path, ForReading)
-      strText = objFile.ReadAll
-      objFile.Close
       portfolioPrev = portfolioCurr - 1
       
       If (portfolioPrev < 10) Then
@@ -136,11 +116,12 @@ If intAnswer = vbOK Then
         strNew = strPre + CStr(portfolioInc)
       End If
       
-      strNewText = Replace(strText, strOld, strNew)
-      Set objFile = objFSO.OpenTextFile(File.Path, ForWriting)
-      objFile.Write strNewText
-      objFile.Close
+      strText = Replace(strText, strOld, strNew)
       ' End of Prev
+      
+      Set objFile = objFSO.OpenTextFile(File.Path, ForWriting)
+      objFile.Write strText
+      objFile.Close
     End If
     
     If (portfolioCurr < 10) Then
