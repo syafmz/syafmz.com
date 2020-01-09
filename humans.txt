@@ -19,7 +19,7 @@
 
 # TECHNOLOGY COLOPHON
 
-  Last update: 2020/01/05
+  Last update: 2020/01/10
   Language: English
   Font: https://fonts.google.com/
   Standards: HTML5, CSS3
