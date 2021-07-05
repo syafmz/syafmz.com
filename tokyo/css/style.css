@@ -448,7 +448,7 @@ h6 { font-size: 16px; }
 	margin-left: 80px;
 }
 .tokyo_tm_home .details .name{
-	font-size: 45px;
+	font-size: 55px;
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-bottom: 14px;
@@ -870,6 +870,10 @@ h6 { font-size: 16px; }
 	    -ms-transition: all .3s ease;
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
+}
+.tokyo_tm_portfolio .portfolio_filter ul li a.current{
+	color: #000;
+	letter-spacing: 2px;
 }
 .tokyo_tm_portfolio .portfolio_filter ul li a:hover{
 	color: #000;
@@ -1463,6 +1467,16 @@ body.modal{
 	width: 15px;
 	height: 15px;
 }
+.tokyo_tm_modalbox_news .news_share ul li a{
+	text-decoration: none;
+	color: #000;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
 
 /*---------------------------------------------------*/
 /*	09) TOKYO CONTACT
@@ -1642,7 +1656,7 @@ body.modal{
 	.tokyo_tm_modalbox_about .my_box{flex-direction: column;}
 	.tokyo_tm_modalbox_about .my_box .left{width: 100%;padding-right: 0px;margin-bottom: 50px;}
 	.tokyo_tm_modalbox_about .my_box .right{width: 100%;padding-left: 0px;}
-	.container{padding: 0px 20px;}
+	.container{padding: 0px 20px;}	
 }
 @media (max-width: 768px) {
 	.tokyo_tm_home .details .name{font-size: 40px;}

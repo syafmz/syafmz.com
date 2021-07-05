@@ -87,6 +87,7 @@ function tokyo_tm_modalbox_news(){
 			mainImage.css({backgroundImage: 'url('+imgData+')'});
 			title = modalBox.find('.title');
 			title.html(titleHref);
+			tokyo_tm_imgtosvg();
 			return false;
 		});
 	});
