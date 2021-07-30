@@ -1496,7 +1496,11 @@ body.modal{
 	float: left;
 	margin-bottom: 50px;
 }
-
+.tokyo_tm_contact .map_wrap .map{
+  min-height: 400px;
+  width: 100%;
+  filter: grayscale(1);
+}
 .tokyo_tm_contact .fields{
 	width: 100%;
 	height: auto;
