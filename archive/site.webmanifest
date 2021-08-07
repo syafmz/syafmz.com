@@ -2,11 +2,11 @@
   "short_name": "Syafmz",
   "name": "Syafiqah Zailani",
   "icons": [{
-    "src": "img/logo/icon.png",
+    "src": "img/icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
   "start_url": "https://syafmz.com",
-  "background_color": "#fff",
-  "theme_color": "#fff"
+  "background_color": "#34373d",
+  "theme_color": "#34373d"
 }

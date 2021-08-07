@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+.tokyo_tm_settings .colors li a.black{background-color: #000;}
+
+
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_home .details .name span{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_home .social ul li a:hover{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .leftpart .menu ul li.active a{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .leftpart .menu ul li a:hover{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .leftpart .copyright a:hover{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_about .description .name span{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_about .description .right > ul > li span{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_button a{background-color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_about .description .right > ul > li a:hover{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_portfolio .portfolio_filter ul li a:hover{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_title span{background-color: rgba(0,0,0,.04);}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_modalbox_news .date a:hover{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_modalbox_news .main_content .icon .svg{color: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .progress_inner .background .bar_in{background: #000;}
+.tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_portfolio .portfolio_filter ul li a.current{color: #000;}
+body.dark .tokyo_tm_all_wrap[data-color="black"] .leftpart .copyright a:hover{color: #000;}
+body.dark .tokyo_tm_all_wrap[data-color="black"] .tokyo_tm_button a{color: #fff;}
+body.dark .tokyo_tm_all_wrap[data-color="black"] .leftpart .menu ul li.active a{color: #000;}
+body.dark .tokyo_tm_all_wrap[data-color="black"] .leftpart .menu ul li a:hover{color: #000;}
+

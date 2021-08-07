@@ -1,0 +1,30 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Name: Alfi Lee
+  Site: https://alfi.gg
+  Twitter: https://twitter.com/Lee7alfie
+  Location: Singapore
+
+  Name: Syafiqah Zailani
+  Site: https://syafmz.com
+  Instagram: https://www.instagram.com/syxfmz/
+  Location: Singapore
+
+# THANKS
+
+  <Insert contributors here>
+
+# TECHNOLOGY COLOPHON
+
+  Last update: 2020/01/10
+  Language: English
+  Font: https://fonts.google.com/
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software: Notepad++, Adobe Photoshop CC 2019
+  Version control: Git
+  Domain: Hover (https://hover.com/NLXdb9Iy)
+  Webhost: GitHub (https://github.com/syafmz)
