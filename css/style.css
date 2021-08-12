@@ -1113,9 +1113,10 @@ opacity: 0.7;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
+  background-color: #000;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center top;
+	background-size: contain;
+	background-position: center;
 }
 .tokyo_tm_modalbox .additional_images ul li .my_image .main .embed-responsive-item,
 .tokyo_tm_modalbox .additional_images ul li .my_image .main embed,
@@ -1405,15 +1406,15 @@ body.modal{
 }
 .tokyo_tm_modalbox .description_wrap{
   scrollbar-width: thin;
-  scrollbar-color: #999 #fff;
+  scrollbar-color: #999 #f8f8f8;
 }
 .tokyo_tm_modalbox .description_wrap:-webkit-scrollbar-track{
-  background: #fff;
+  background: #f8f8f8;
 }
 .tokyo_tm_modalbox .description_wrap::-webkit-scrollbar-thumb{
   background-color: #999;
   border-radius: 6px;
-  border: 3px solid #fff;
+  border: 3px solid #f8f8f8;
 }
 
 /*---------------------------------------------------*/
