@@ -14,6 +14,8 @@
 10) TOKYO MAGIC CURSOR
 11) TOKYO MEDIA QUERIES (FOR SMALL DEVIVES)
 
+/* Font Awesome icons font */
+@import url('font/fontawesome-free/css/all.min.css'); /* Full icons list: https://fontawesome.com/icons?d=gallery&m=free */
 
 /*---------------------------------------------------*/
 /*	01) TOKYO BASE
@@ -1773,6 +1775,38 @@ body.modal{
 	margin-bottom: 7px;
 	text-align: left;
 	font-weight: 500;
+}
+
+#mycontact {
+  background: url("../img/contact.png") no-repeat left center;
+  background-size: contain;
+}
+
+#mycontact h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2em;
+  margin: 1em auto;
+}
+
+#mycontact h1 i {
+  margin-right: 8px;
+}
+
+#mycontact a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+#mycontact a:hover{
+	color: #000;
+	letter-spacing: 2px;
 }
 
 /*---------------------------------------------------*/

@@ -1,10 +1,3 @@
-/*
- * Copyright (c) 2021 Marketify
- * Author: Marketify
- * This file is made for CURRENT TEMPLATE
-*/
-
-
 jQuery(document).ready(function(){
 
 	"use strict";
