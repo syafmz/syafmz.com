@@ -12,15 +12,18 @@ jQuery(document).ready(function(){
 	tokyo_tm_mycounter();
 	tokyo_tm_projects();
 	tokyo_tm_portfolio();
+  tokyo_tm_cursor();
 	tokyo_tm_imgtosvg();
 	tokyo_tm_popup();
 	tokyo_tm_data_images();
 	tokyo_tm_owl_carousel();
-	
-	jQuery(window).load('body', function(){
+  
+  jQuery('.tokyo_tm_portfolio .portfolio_filter ul li a.current').click();
+  
+  jQuery(window).load('body', function(){
 		tokyo_tm_my_load();
 	});
-	
+  
 });
 
 // -----------------------------------------------------
@@ -132,7 +135,7 @@ function tokyo_tm_modalbox_portfolio(){
 		var details 	= parent.find('.details_all_wrap').html();
 		var title 		= parent.find('.entry').data('title');
 		var category 	= parent.find('.entry').data('category');
-		
+    
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(details);
 		modalBox.find('.top_image').html(parent.find('.popup_info').html());
@@ -148,7 +151,7 @@ function tokyo_tm_modalbox_portfolio(){
 function tokyo_tm_projects() {
 	
 	"use strict";
-	
+  
 	jQuery('.tokyo_tm_portfolio_animation_wrap').each(function() {
 		jQuery(this).on('mouseenter', function() {
 			if (jQuery(this).data('title')) {
@@ -295,6 +298,32 @@ function tokyo_tm_my_load(){
 	var speed	= 500;
 	setTimeout(function(){tokyo_tm_preloader();},speed);
 }
+
+// -----------------------------------------------------
+// ------------------   CURSOR    ----------------------
+// -----------------------------------------------------
+
+function tokyo_tm_cursor(){
+    "use strict";
+	
+	var myCursor	= jQuery('.mouse-cursor');
+	
+	if(myCursor.length){
+		if ($("body")) {
+        const e = document.querySelector(".cursor-inner"),
+            t = document.querySelector(".cursor-outer");
+        let n, i = 0,
+            o = !1;
+        window.onmousemove = function (s) {
+            o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
+        }, $("body").on("mouseenter", "a, .cursor-pointer", function () {
+            e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
+        }), $("body").on("mouseleave", "a, .cursor-pointer", function () {
+            $(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"))
+        }), e.style.visibility = "visible", t.style.visibility = "visible"
+    }
+	}
+};
 
 // -----------------------------------------------------
 // ---------------    IMAGE TO SVG    ------------------

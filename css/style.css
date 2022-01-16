@@ -939,7 +939,7 @@ opacity: 0.7;
   background-color: #000;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -1145,8 +1145,9 @@ opacity: 0.7;
 	right: 0px;
   background-color: #000;
 	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	background-size: cover;
+	background-position: center center;
+  border: 1px solid #ddd;
 }
 .tokyo_tm_modalbox .additional_images ul li .my_image .main .embed-responsive-item,
 .tokyo_tm_modalbox .additional_images ul li .my_image .main embed,
