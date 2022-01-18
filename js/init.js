@@ -18,10 +18,9 @@ jQuery(document).ready(function(){
 	tokyo_tm_data_images();
 	tokyo_tm_owl_carousel();
   
-  jQuery('.tokyo_tm_portfolio .portfolio_filter ul li a.current').click();
-  
   jQuery(window).load('body', function(){
 		tokyo_tm_my_load();
+    jQuery('.tokyo_tm_portfolio .portfolio_filter ul li a.current').click();
 	});
   
 });
