@@ -19,9 +19,12 @@ jQuery(document).ready(function(){
 	tokyo_tm_owl_carousel();
   
   jQuery(window).load('body', function(){
-		tokyo_tm_my_load();
-    jQuery('.tokyo_tm_portfolio .portfolio_filter ul li a.current').click();
+    tokyo_tm_my_load();
 	});
+  
+  var url = window.location.hash;
+  jQuery('.tokyo_tm_all_wrap .leftpart .menu ul li a[href*="'+ url + '"],.tokyo_tm_mobile_menu .menu ul li a[href*="'+ url + '"]').click();
+  jQuery('.tokyo_tm_portfolio .portfolio_filter ul li a.current').click();
   
 });
 
